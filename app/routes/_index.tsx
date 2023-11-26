@@ -1,41 +1,51 @@
 import type { MetaFunction } from "@remix-run/node";
 
+import CTA from "~/components/CTA";
+import Banner from "~/components/Banner";
+import Testimonials from "~/components/Testimonials";
+import Companies from "~/components/Companies";
+import Businesses from "~/components/Businesses";
+import FeatureCallout from "~/components/FeatureCallout";
+import Products from "~/components/Products";
+import Trends from "~/components/Trends";
+import PowerOfPlatform from "~/components/PowerOfPlatform";
+import NextivaPromise from "~/components/NextivaPromise";
+
 export const meta: MetaFunction = () => {
-  return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
-  ];
+	return [
+		{ title: "Nextiva: Business Communications Collaboration Software" },
+		{
+			name: "description",
+			content:
+				"Nextiva is a software company that enables all your business communications through one collaboration tool. Get more done using fewer apps. Start your free trial!",
+		},
+	];
 };
 
 export default function Index() {
-  return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1>Welcome to Remix</h1>
-      <ul>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/blog"
-            rel="noreferrer"
-          >
-            15m Quickstart Blog Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/jokes"
-            rel="noreferrer"
-          >
-            Deep Dive Jokes App Tutorial
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
-          </a>
-        </li>
-      </ul>
-    </div>
-  );
+	return (
+		<div>
+			<div className="mt-12 flex flex-col gap-10 md:gap-20">
+				<Banner />
+			</div>
+
+			<Businesses />
+
+			<FeatureCallout />
+
+			<Products />
+
+			<Trends />
+
+			<PowerOfPlatform />
+
+			<NextivaPromise />
+
+			<Testimonials />
+
+			<Companies />
+
+			<CTA />
+		</div>
+	);
 }
