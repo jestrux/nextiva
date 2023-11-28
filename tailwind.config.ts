@@ -3,6 +3,9 @@ import type { Config } from "tailwindcss";
 export default {
 	content: ["./app/**/*.{js,jsx,ts,tsx}"],
 	theme: {
+		fontFamily: {
+			sohne: ["Sohne", "sans-serif"],
+		},
 		extend: {
 			spacing: {
 				128: "32rem",
