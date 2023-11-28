@@ -1,0 +1,40 @@
+@font-face {
+	font-family: "Sohne";
+	src: url("../public/fonts/Sohne/Sohne-Regular.otf");
+}
+
+@font-face {
+	font-family: "Sohne";
+	font-weight: 300;
+	src: url("../public/fonts/Sohne/Sohne-Light.otf");
+}
+
+@font-face {
+	font-family: "Sohne";
+	font-weight: 400;
+	src: url("../public/fonts/Sohne/Sohne-Regular.otf");
+}
+
+@font-face {
+	font-family: "Sohne";
+	font-weight: 500;
+	src: url("../public/fonts/Sohne/Sohne-Medium.otf");
+}
+
+@font-face {
+	font-family: "Sohne";
+	font-weight: 600;
+	src: url("../public/fonts/Sohne/Sohne-SemiBold.otf");
+}
+
+@font-face {
+	font-family: "Sohne";
+	font-weight: 700;
+	src: url("../public/fonts/Sohne/Sohne-Bold.otf");
+}
+
+@font-face {
+	font-family: "Sohne";
+	font-weight: 800;
+	src: url("../public/fonts/Sohne/Sohne-Bold.otf");
+}

@@ -13,4 +13,5 @@
     <title>Nextiva: Business Communications Collaboration Software</title>
     <meta name="description" content="Nextiva is a software company that enables all your business communications through one collaboration tool. Get more done using fewer apps. Start your free trial!" />
     <link rel="stylesheet" href="../css/styles-TYWYIXCN.css" />
+    <link rel="stylesheet" href="../css/fonts.css" />
 </head>

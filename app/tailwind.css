@@ -2,33 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-	font-family: "Sohne";
-	src: url("../public/fonts/Sohne/Sohne-Regular.otf");
+.top-highlight-gradient {
+	position: absolute;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: radial-gradient(
+		119.05% 61.04% at 50% -13.57%,
+		rgba(255, 255, 255, 0.15) 0%,
+		rgba(255, 255, 255, 0) 49.35%
+	);
 }
 
-@font-face {
-	font-family: "Sohne";
-	font-weight: 300;
-	src: url("../public/fonts/Sohne/Sohne-Light.otf");
+.bottom-highlight-gradient {
+	position: absolute;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: radial-gradient(
+		180.33% 92.46% at 50% 111.42%,
+		rgba(255, 255, 255, 0.15) 0%,
+		rgba(255, 255, 255, 0) 28.94%
+	);
 }
 
-@font-face {
-	font-family: "Sohne";
-	font-weight: 600;
-	src: url("../public/fonts/Sohne/Sohne-Medium.otf");
+.large-card-gradient {
+	background: linear-gradient(
+			213.28deg,
+			#151f42 22.72%,
+			rgba(41, 43, 55, 0) 109.79%
+		),
+		linear-gradient(
+			180deg,
+			rgba(255, 255, 255, 0.16) 0%,
+			rgba(255, 255, 255, 0) 102.33%
+		);
 }
 
-@font-face {
-	font-family: "Sohne";
-	font-weight: 700;
-	src: url("../public/fonts/Sohne/Sohne-SemiBold.otf");
+.tab-button-gradient {
+	background: linear-gradient(
+			213.28deg,
+			#151f42 22.72%,
+			rgba(41, 43, 55, 0) 109.79%
+		),
+		linear-gradient(
+			180deg,
+			rgba(255, 255, 255, 0.16) 0%,
+			rgba(255, 255, 255, 0) 102.33%
+		);
 }
 
-@font-face {
-	font-family: "Sohne";
-	font-weight: 800;
-	src: url("../public/fonts/Sohne/Sohne-Bold.otf");
+.caption-gradient {
+	background: linear-gradient(
+		251.56deg,
+		rgba(66, 114, 231, 0.14) 62.68%,
+		rgba(255, 255, 255, 0) 95.53%
+	);
 }
 
 @layer base {
@@ -69,8 +104,9 @@
 		--popup-color: 255 255 255;
 		--divider-color: 212 212 212;
 		--content-color: 0 0 0;
-		--pier-primary-color: 56 88 249;
-		--pier-primary-light-color: 244 255 243;
+		--primary-color: 56 88 249;
+		--primary-light-color: 244 255 243;
+		--primary-dark-color: 27 42 118;
 	}
 
 	.theme-mode-dark,
@@ -89,8 +125,9 @@
 		--popup-color: 46 46 46;
 		--divider-color: 34 34 34;
 		--content-color: 255 255 255;
-		--pier-primary-color: 56 88 249;
-		--pier-primary-light-color: 244 255 243;
+		--primary-color: 56 88 249;
+		--primary-light-color: 244 255 243;
+		--primary-dark-color: 27 42 118;
 		color-scheme: dark;
 	}
 
@@ -99,6 +136,7 @@
 
 	* {
 		font-family: "Sohne", sans-serif;
+		font-weight: 400;
 	}
 
 	*,
@@ -135,11 +173,15 @@
 	}
 
 	:root {
-		--primary-color: rgb(56, 88, 249);
+		/* --primary-color: rgb(56, 88, 249); */
 	}
 
 	.button {
 		@apply tracking-normal transition-colors duration-150 inline-flex font-semibold md:font-medium md:text-lg/none text-white items-center justify-center px-5 md:px-7 h-12 md:h-14 border rounded-full bg-primary hover:opacity-80 border-primary;
+	}
+
+	.button-white {
+		@apply bg-white text-primary border-white;
 	}
 
 	strong {

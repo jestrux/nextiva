@@ -17,6 +17,8 @@
 
     include_once "../shared/footer.php";
     ?>
+
+    <script src="//unpkg.com/alpinejs" defer></script>
 </body>
 
 </html>
