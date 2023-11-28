@@ -2,35 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-	font-family: "Sohne";
-	src: url("../public/fonts/Sohne/Sohne-Regular.otf");
-}
-
-@font-face {
-	font-family: "Sohne";
-	font-weight: 300;
-	src: url("../public/fonts/Sohne/Sohne-Light.otf");
-}
-
-@font-face {
-	font-family: "Sohne";
-	font-weight: 600;
-	src: url("../public/fonts/Sohne/Sohne-Medium.otf");
-}
-
-@font-face {
-	font-family: "Sohne";
-	font-weight: 700;
-	src: url("../public/fonts/Sohne/Sohne-SemiBold.otf");
-}
-
-@font-face {
-	font-family: "Sohne";
-	font-weight: 800;
-	src: url("../public/fonts/Sohne/Sohne-Bold.otf");
-}
-
 @layer base {
 	[type="text"],
 	[type="email"],
@@ -69,8 +40,9 @@
 		--popup-color: 255 255 255;
 		--divider-color: 212 212 212;
 		--content-color: 0 0 0;
-		--pier-primary-color: 56 88 249;
-		--pier-primary-light-color: 244 255 243;
+		--primary-color: 56 88 249;
+		--primary-light-color: 244 255 243;
+		--primary-dark-color: 27 42 118;
 	}
 
 	.theme-mode-dark,
@@ -89,8 +61,9 @@
 		--popup-color: 46 46 46;
 		--divider-color: 34 34 34;
 		--content-color: 255 255 255;
-		--pier-primary-color: 56 88 249;
-		--pier-primary-light-color: 244 255 243;
+		--primary-color: 56 88 249;
+		--primary-light-color: 244 255 243;
+		--primary-dark-color: 27 42 118;
 		color-scheme: dark;
 	}
 
@@ -99,6 +72,7 @@
 
 	* {
 		font-family: "Sohne", sans-serif;
+		font-weight: 400;
 	}
 
 	*,
@@ -135,11 +109,15 @@
 	}
 
 	:root {
-		--primary-color: rgb(56, 88, 249);
+		/* --primary-color: rgb(56, 88, 249); */
 	}
 
 	.button {
 		@apply tracking-normal transition-colors duration-150 inline-flex font-semibold md:font-medium md:text-lg/none text-white items-center justify-center px-5 md:px-7 h-12 md:h-14 border rounded-full bg-primary hover:opacity-80 border-primary;
+	}
+
+	.button-white {
+		@apply bg-white text-primary border-white;
 	}
 
 	strong {

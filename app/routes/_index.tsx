@@ -24,10 +24,8 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
 	return (
-		<div>
-			<div className="mt-12 flex flex-col gap-10 md:gap-20">
-				<Banner />
-			</div>
+		<div className="mt-12">
+			<Banner />
 
 			<Businesses />
 
