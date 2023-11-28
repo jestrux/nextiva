@@ -18,8 +18,7 @@
     include_once "../shared/footer.php";
     ?>
 
-    <!-- <script src="//unpkg.com/alpinejs" defer></script> -->
-    <script src="../js/alpine.min.js" defer></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
 </body>
 
 </html>

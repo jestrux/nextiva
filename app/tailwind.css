@@ -2,6 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
+.top-highlight-gradient {
+	position: absolute;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: radial-gradient(
+		119.05% 61.04% at 50% -13.57%,
+		rgba(255, 255, 255, 0.15) 0%,
+		rgba(255, 255, 255, 0) 49.35%
+	);
+}
+
+.bottom-highlight-gradient {
+	position: absolute;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: radial-gradient(
+		180.33% 92.46% at 50% 111.42%,
+		rgba(255, 255, 255, 0.15) 0%,
+		rgba(255, 255, 255, 0) 28.94%
+	);
+}
+
+.large-card-gradient {
+	background: linear-gradient(
+			213.28deg,
+			#151f42 22.72%,
+			rgba(41, 43, 55, 0) 109.79%
+		),
+		linear-gradient(
+			180deg,
+			rgba(255, 255, 255, 0.16) 0%,
+			rgba(255, 255, 255, 0) 102.33%
+		);
+}
+
+.tab-button-gradient {
+	background: linear-gradient(
+			213.28deg,
+			#151f42 22.72%,
+			rgba(41, 43, 55, 0) 109.79%
+		),
+		linear-gradient(
+			180deg,
+			rgba(255, 255, 255, 0.16) 0%,
+			rgba(255, 255, 255, 0) 102.33%
+		);
+}
+
+.caption-gradient {
+	background: linear-gradient(
+		251.56deg,
+		rgba(66, 114, 231, 0.14) 62.68%,
+		rgba(255, 255, 255, 0) 95.53%
+	);
+}
+
 @layer base {
 	[type="text"],
 	[type="email"],
