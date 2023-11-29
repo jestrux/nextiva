@@ -4,7 +4,7 @@ import Testimonial from "./Testimonial";
 import Results from "./Results";
 import UpgradingCustomerService from "./UpgradingCustomerService";
 import OtherCustomerStories from "./OtherCustomerStories";
-import CTA from "./CTA";
+import CTATeam from "../../components/CTATeam";
 
 function CustomerStories() {
 	return (
@@ -15,7 +15,7 @@ function CustomerStories() {
 			<UpgradingCustomerService />
 			<Results />
 			<OtherCustomerStories />
-			<CTA />
+			<CTATeam />
 		</div>
 	);
 }

@@ -27,7 +27,9 @@ export default function Index() {
 		<div className="mt-12">
 			<Banner />
 
-			<Businesses />
+			<section className="-mt-32 mb-20 relative z-10">
+				<Businesses />
+			</section>
 
 			<FeatureCallout />
 

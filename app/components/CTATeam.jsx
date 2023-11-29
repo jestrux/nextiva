@@ -1,4 +1,8 @@
-export default function CTA() {
+export default function CTATeam({
+	title = "See how Nextiva can\nhelp your business\ngrow fearlessly.",
+	actionLink = "#",
+	actionText = "Get started for free",
+}) {
 	return (
 		<section className="py-8 md:py-12 mb-12">
 			<div className="max-w-5xl mx-auto">
@@ -21,23 +25,24 @@ export default function CTA() {
 								))}
 							</div>
 
-							<span className="text-sm font-light opacity-80">Talk to our team</span>
+							<span className="text-sm font-light opacity-80">
+								Talk to our team
+							</span>
 						</div>
 						<h2 className="text-2xl md:text-5xl/[1.2] mb-2 md:mb-4">
-							See how Nextiva can
-							<span className="hidden md:inline">
-								<br />
-							</span>{" "}
-							help your business
-							<span className="hidden md:inline">
-								<br />
-							</span>{" "}
-							grow fearlessly.
+							{title.split("\n").map((line) => (
+								<>
+									{line}
+									<span className="hidden md:inline">
+										<br />
+									</span>
+								</>
+							))}
 						</h2>
 
-						<button className="button button-white">
-							Get started for free
-						</button>
+						<a href={actionLink} className="button button-white">
+							{actionText}
+						</a>
 					</div>
 
 					<div className="absolute inset-y-0 right-0">

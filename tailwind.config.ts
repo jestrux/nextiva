@@ -30,6 +30,9 @@ export default {
 					"rgb(var(--primary-dark-color) / <alpha-value>)",
 				accent: "rgb(var(--accent-color) / <alpha-value>)",
 				"action-card": "rgb(var(--action-card-color) / <alpha-value>)",
+
+				success: "rgb(var(--success-color) / <alpha-value>)",
+				warning: "rgb(var(--warning-color) / <alpha-value>)",
 			},
 		},
 	},
