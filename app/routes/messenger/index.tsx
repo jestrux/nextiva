@@ -5,6 +5,7 @@ import Businesses from "~/components/Businesses";
 import Banner from "./Banner";
 import MessagingPlatforms from "./MessagingPlatforms";
 import SalesAndMarketing from "./SalesAndMarketing";
+import CTATeam from "~/components/CTATeam";
 
 export const meta: MetaFunction = () => {
 	return [
@@ -31,6 +32,11 @@ export default function Index() {
 			<MessagingPlatforms />
 
 			<SalesAndMarketing />
+
+			<CTATeam
+				title={`Ready to make business\nconversations better?`}
+				actionText="Let's talk business"
+			/>
 		</div>
 	);
 }

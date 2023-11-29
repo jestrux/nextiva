@@ -97,7 +97,7 @@ const MessagingPlatforms = () => {
 
 			<div className="container">
 				<div className="flex flex-col gap-2 items-center justify-center text-center">
-					<h2 className="text-2xl md:text-5xl/tight font-medium">
+					<h2 className="text-2xl md:text-6xl/tight font-medium">
 						Meet your customers on their favorite
 						<span className="hidden md:inline">
 							<br />
