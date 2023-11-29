@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.success-tag {
+	background-color: rgba(118, 229, 183, 0.2);
+	color: rgba(118, 229, 183, 1);
+}
+
 .top-highlight-gradient {
 	position: absolute;
 	pointer-events: none;
@@ -128,6 +133,9 @@
 		--primary-light-color: 244 255 243;
 		--primary-dark-color: 27 42 118;
 		color-scheme: dark;
+
+		--success-color: 118 229 183;
+		--warning-color: 243 219 155;
 	}
 
 	body.bg-canvas a,
