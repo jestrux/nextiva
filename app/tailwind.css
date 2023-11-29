@@ -21,6 +21,11 @@
 		rgba(255, 255, 255, 0) 49.35%
 	);
 }
+@font-face {
+	font-family: "Sohne";
+	font-weight: 100;
+	src: url("../public/fonts/Sohne/Sohne-Thin.otf");
+}
 
 .bottom-highlight-gradient {
 	position: absolute;
@@ -220,7 +225,10 @@
 	}
 
 	.button {
-		@apply tracking-normal transition-colors duration-150 inline-flex font-semibold md:font-medium md:text-lg/none text-white items-center justify-center px-5 md:px-7 h-12 md:h-14 border rounded-full bg-primary hover:opacity-80 border-primary;
+		@apply tracking-normal transition-colors duration-150 inline-flex font-semibold md:font-medium md:text-base/none text-white items-center justify-center px-5 md:px-7 h-12 md:h-14 border rounded-full bg-primary hover:opacity-80 border-primary;
+	}
+	.button-outline{
+		@apply tracking-normal transition-colors duration-150 inline-flex font-semibold md:font-medium md:text-base/none text-white items-center justify-center px-5 md:px-7 h-12 md:h-14 border rounded-full  hover:opacity-80 border-white;
 	}
 
 	.button-white {
