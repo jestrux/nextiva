@@ -197,7 +197,7 @@
 	}
 
 	.button-white {
-		@apply bg-white text-primary border-white;
+		@apply bg-white !text-primary border-white;
 	}
 
 	strong {

@@ -1,6 +1,6 @@
 <?php include_once "../shared/head.php"; ?>
 
-<body class="bg-canvas">
+<body class="bg-canvas text-content">
     <?php
     include_once "../shared/nav.php";
 

@@ -63,7 +63,7 @@ export default function App() {
 				<Meta />
 				<Links />
 			</head>
-			<body className="bg-canvas text-content" style={{backgroundColor: "rgb(var(--primary-color) / 100)"}}>
+			<body className="bg-canvas text-content">
 				<AppNavBar />
 
 				<main className="min-h-[600px]">

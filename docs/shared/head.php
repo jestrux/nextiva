@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="theme-mode-dark">
+<html lang="en">
 
 <head>
     <meta charSet="utf-8" />
