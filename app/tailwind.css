@@ -144,7 +144,7 @@
 	}
 
 	body.bg-canvas button {
-		border: none;
+		@apply border-none;
 	}
 
 	@media (prefers-color-scheme: dark) {
