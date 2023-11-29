@@ -1,11 +1,13 @@
 import type { MetaFunction } from "@remix-run/node";
 
 import Businesses from "~/components/Businesses";
+import CTATeam from "~/components/CTATeam";
 
 import Banner from "./Banner";
 import MessagingPlatforms from "./MessagingPlatforms";
 import SalesAndMarketing from "./SalesAndMarketing";
-import CTATeam from "~/components/CTATeam";
+import Results from "./Results";
+import FAQ from "./FAQ";
 
 export const meta: MetaFunction = () => {
 	return [
@@ -33,10 +35,14 @@ export default function Index() {
 
 			<SalesAndMarketing />
 
+			<Results />
+
 			<CTATeam
 				title={`Ready to make business\nconversations better?`}
 				actionText="Let's talk business"
 			/>
+
+			<FAQ />
 		</div>
 	);
 }

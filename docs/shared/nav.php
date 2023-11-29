@@ -1,6 +1,6 @@
 <section
 	id="mainNavigationMenu"
-	class="sticky z-50 -top-px md:shadow-sm md:border-b bg-canvas border-content/5"
+	class="sticky z-50 -top-px md:shadow-sm md:border-b bg-canvas border-content/10"
 >
 	<div class="relative flex items-center justify-between p-3 md:hidden">
 		<a href="/" class="pb-2 ml-1">
@@ -256,7 +256,7 @@
 						>Login</a
 					><a
 						href="#"
-						class="bg-primary dark:bg-white text-white dark:text-black shadow hover:opacity-90 rounded-full h-12 px-4 text-md font-semibold group min-w-[80px] flex items-center justify-center text-center focus:outline-none"
+						class="bg-primary shadow hover:opacity-90 rounded-full h-12 px-4 text-md font-semibold group min-w-[80px] flex items-center justify-center text-center focus:outline-none"
 						>Start for free</a
 					>
 				</div>

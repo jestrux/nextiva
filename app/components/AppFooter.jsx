@@ -54,7 +54,7 @@ export default function AppFooter() {
                                 <a href="/" className="pb-2 ml-1 text-content">
                                     <svg
                                         id="logoSvg"
-                                        className="h-7"
+                                        className="h-7 text-content"
                                         viewBox="0 0 116 34"
                                         fill="currentColor"
                                         xmlns="http://www.w3.org/2000/svg"

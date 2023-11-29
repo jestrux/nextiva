@@ -2,7 +2,7 @@
     <div class="p-6 md:pt-12 pb-4 md:pb-10 container leading-loose grid grid-cols-12">
         <div class="hidden md:block col-span-5 min-h-full">
             <div class="min-h-full mr-6 pr-16 relative">
-                <div class="flex flex-col gap-3"><a href="/" class="pb-2 ml-1 text-content"><svg id="logoSvg" class="h-7" viewBox="0 0 116 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <div class="flex flex-col gap-3"><a href="/" class="pb-2 ml-1 text-content"><svg id="logoSvg" class="h-7 text-content" viewBox="0 0 116 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path d="M45.6952 12.9354C49.0073 12.9354 51.6872 10.2295 51.6872 6.89741C51.6872 3.56533 49.0019 0.859375 45.6952 0.859375C42.3885 0.859375 39.7031 3.56533 39.7031 6.89741C39.7031 10.2295 42.3885 12.9354 45.6952 12.9354Z" fill="#F8B400"></path>
                             <path d="M11.3357 14.2969H0V33.1133H5.33827V18.3367H10.0011C11.1142 18.3367 12.0057 19.2351 12.0057 20.3567V33.1351H17.344V20.3567C17.344 16.9974 14.6424 14.2969 11.3303 14.2969H11.3357Z"></path>
                             <path d="M70.0436 29.0717H66.5478C65.5158 28.99 64.7 28.1297 64.7 27.0517V18.3132H70.0382V14.2733H64.7V7.55469H59.3617V14.2733H57.0222L54.0234 18.3132H59.3617V27.068C59.3617 30.4056 62.0416 33.1061 65.3537 33.1061H70.0166V30.8684L70.0382 29.0662L70.0436 29.0717Z"></path>

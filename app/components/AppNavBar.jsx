@@ -30,7 +30,7 @@ export default function AppNavBar() {
 	return (
 		<section
 			id="mainNavigationMenu"
-			className="sticky z-50 -top-px md:shadow-sm md:border-b bg-canvas border-content/5"
+			className="sticky z-50 -top-px md:shadow-sm md:border-b bg-canvas border-content/10"
 		>
 			<div className="relative flex items-center justify-between p-3 md:hidden">
 				<Link href="/" className="pb-2 ml-1">
@@ -238,7 +238,7 @@ export default function AppNavBar() {
 							</a>
 							<a
 								href="#"
-								className="bg-primary dark:bg-white text-white dark:text-black shadow hover:opacity-90 rounded-full h-12 px-4 text-md font-semibold  group min-w-[80px] flex items-center justify-center text-center focus:outline-none"
+								className="bg-primary text-white shadow hover:opacity-90 rounded-full h-12 px-4 text-md font-semibold  group min-w-[80px] flex items-center justify-center text-center focus:outline-none"
 							>
 								Start for free
 							</a>
@@ -267,7 +267,7 @@ export default function AppNavBar() {
 					</a>
 					<a
 						href="#"
-						className="bg-primary dark:bg-white text-white dark:text-black shadow hover:opacity-90 rounded-full h-9 px-4 text-sm font-semibold  group min-w-[80px] flex items-center justify-center text-center focus:outline-none"
+						className="bg-primary text-white shadow hover:opacity-90 rounded-full h-9 px-4 text-sm font-semibold  group min-w-[80px] flex items-center justify-center text-center focus:outline-none"
 					>
 						Start for free
 					</a>

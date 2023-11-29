@@ -62,7 +62,7 @@ const SalesAndMarketing = () => {
 	];
 
 	return (
-		<section className="mb-24 py-20 relative">
+		<section className="py-20 relative">
 			<div className="pointer-events-none absolute inset-x-6 top-0 h-px bg-gradient-to-r from-content/[0.03] via-content/50 to-content-[0.03]"></div>
 			<div className="top-highlight-gradient"></div>
 

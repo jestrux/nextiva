@@ -144,7 +144,11 @@
 	}
 
 	body.bg-canvas button {
-		@apply border-none;
+		@apply border-none text-left;
+	}
+
+	[x-cloak] {
+		display: none !important;
 	}
 
 	@media (prefers-color-scheme: dark) {
