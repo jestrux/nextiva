@@ -89,7 +89,7 @@
 		@apply border-content/20 rounded text-primary focus:ring-primary;
 	}
 
-	:root {
+	/* :root {
 		--border-color: #d3d9e1;
 		--shadow-color: rgba(0, 0, 0, 0.26);
 
@@ -107,10 +107,9 @@
 		--primary-color: 56 88 249;
 		--primary-light-color: 244 255 243;
 		--primary-dark-color: 27 42 118;
-	}
+	} */
 
-	.theme-mode-dark,
-	.theme-mode-dark * {
+	:root {
 		--border-color: rgba(255, 255, 255, 0.16);
 		--shadow-color: rgba(0, 0, 0, 1);
 
@@ -129,6 +128,15 @@
 		--primary-light-color: 244 255 243;
 		--primary-dark-color: 27 42 118;
 		color-scheme: dark;
+	}
+
+	body.bg-canvas a,
+	body.bg-canvas a:hover {
+		color: inherit;
+	}
+
+	body.bg-canvas button {
+		border: none;
 	}
 
 	@media (prefers-color-scheme: dark) {

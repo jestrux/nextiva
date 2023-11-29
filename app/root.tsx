@@ -1,4 +1,5 @@
 import stylesheet from "~/tailwind.css";
+// import wpTheme from "~/wp-theme.css";
 import fonts from "~/fonts.css";
 
 import { cssBundleHref } from "@remix-run/css-bundle";
@@ -17,13 +18,14 @@ import AppFooter from "~/components/AppFooter";
 
 export const links: LinksFunction = () => [
 	...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
+	// { rel: "stylesheet", href: wpTheme },
 	{ rel: "stylesheet", href: stylesheet },
 	{ rel: "stylesheet", href: fonts },
 ];
 
 export default function App() {
 	return (
-		<html lang="en" class="theme-mode-dark">
+		<html lang="en">
 			<head>
 				<meta charSet="utf-8" />
 				<meta
@@ -61,7 +63,7 @@ export default function App() {
 				<Meta />
 				<Links />
 			</head>
-			<body className="bg-canvas">
+			<body className="bg-canvas text-content" style={{backgroundColor: "rgb(var(--primary-color) / 100)"}}>
 				<AppNavBar />
 
 				<main className="min-h-[600px]">
