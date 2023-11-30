@@ -37,6 +37,29 @@
 	);
 }
 
+.top-highlight-gradient.vibrant,
+.bottom-highlight-gradient.vibrant {
+	background: radial-gradient(
+		34.85% 68.7% at 50% 129.7%,
+		#3758f9 0%,
+		rgba(55, 88, 249, 0.992866) 9.81%,
+		rgba(55, 88, 249, 0.972233) 17.53%,
+		rgba(55, 88, 249, 0.939253) 23.53%,
+		rgba(55, 88, 249, 0.895079) 28.2%,
+		rgba(55, 88, 249, 0.840863) 31.91%,
+		rgba(55, 88, 249, 0.777758) 35.04%,
+		rgba(55, 88, 249, 0.706917) 37.98%,
+		rgba(55, 88, 249, 0.629493) 41.1%,
+		rgba(55, 88, 249, 0.546637) 44.78%,
+		rgba(55, 88, 249, 0.459503) 49.41%,
+		rgba(55, 88, 249, 0.369244) 55.36%,
+		rgba(55, 88, 249, 0.277011) 63.02%,
+		rgba(55, 88, 249, 0.183958) 72.75%,
+		rgba(55, 88, 249, 0.0912365) 84.95%,
+		rgba(55, 88, 249, 0) 100%
+	);
+}
+
 .large-card-gradient {
 	background: linear-gradient(
 			213.28deg,
@@ -144,7 +167,7 @@
 	}
 
 	body.bg-canvas button {
-		@apply border-none text-left;
+		@apply text-left;
 	}
 
 	[x-cloak] {
