@@ -1,5 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
-import FeatureCard from "~/routes/liveChat/FeatureCard";
+import CustomerSupport from "~/routes/live-chat/CustomerSupport";
+import AIChatBot from "~/routes/live-chat/AiChatBot";
+import Customization from "~/routes/live-chat/Customization";
 
 export const meta: MetaFunction = () => {
   return [
@@ -187,9 +189,10 @@ export default function AboutUsPage() {
         </div>
       </section>
       {/* decoration section */}
-      <section className={"py-20"}>
-        <FeatureCard />
-      </section>
+
+      <CustomerSupport />
+      <AIChatBot />
+      <Customization />
     </>
   );
 }
