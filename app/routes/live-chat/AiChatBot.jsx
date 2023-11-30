@@ -1,32 +1,33 @@
 import FeatureListItem from "~/routes/live-chat/FeatureListItem";
 
-export default function AIChatBot() {
-  const features = [
-    {
-      title: "55% efficiency increase",
-      description: "Your team will be more efficient, working on what matters",
-      Icon: PhoneCallIcon,
-    },
-    {
-      title: "40% more engagement",
-      description: "Our AI chatbots see more engagement than traditional chat",
-      Icon: PhoneCallIcon,
-    },
-    {
-      title: "Increased capacity",
-      description:
-        "Enable your business to handle more conversations than ever",
-      Icon: PhoneCallIcon,
-    },
+const features = [
+  {
+    title: "55% efficiency increase",
+    description: "Your team will be more efficient, working on what matters",
+    Icon: PhoneCallIcon,
+  },
+  {
+    title: "40% more engagement",
+    description: "Our AI chatbots see more engagement than traditional chat",
+    Icon: PhoneCallIcon,
+  },
+  {
+    title: "Increased capacity",
+    description: "Enable your business to handle more conversations than ever",
+    Icon: PhoneCallIcon,
+  },
 
-    {
-      title: "100% answer-rate",
-      description: "All common questions are answered instantly",
-      Icon: PhoneCallIcon,
-    },
-  ];
+  {
+    title: "100% answer-rate",
+    description: "All common questions are answered instantly",
+    Icon: PhoneCallIcon,
+  },
+];
+export default function AIChatBot() {
   return (
-    <section className={"py-20 "}>
+    <section className={"py-20 relative "}>
+      <div className="pointer-events-none absolute inset-x-6 top-0 h-px bg-gradient-to-r from-content/[0.03] via-content/50 to-content-[0.03]"></div>
+      <div className="top-highlight-gradient"></div>
       <div className={"container md:px-12 space-y-14"}>
         <div className={"flex space-x-32"}>
           <div className={"space-y-8 flex flex-col justify-center"}>
@@ -68,7 +69,7 @@ export default function AIChatBot() {
               </p>
             </div>
 
-            <h3 className={"text-5xl font-medium leading-[3.5rem]"}>
+            <h3 className={"text-[2.8rem] font-medium leading-[3.3rem]"}>
               Supercharge customer <br /> conversations with an <br /> AI Chat
               Bot
             </h3>

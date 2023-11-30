@@ -1,6 +1,8 @@
 export default function Customization() {
   return (
-    <section className={"py-20 "}>
+    <section className={"py-20 relative"}>
+      <div className="pointer-events-none w-[40rem] mx-auto absolute inset-x-6 top-0 h-px bg-gradient-to-r from-content/[0.03] via-content/50 to-content-[0.03]"></div>
+      {/*<div className="top-highlight-gradient"></div>*/}
       <div className="2xl:container space-y-32">
         <div className={"flex flex-col space-y-6 items-center md:px-12"}>
           <div className={"flex space-x-2"}>

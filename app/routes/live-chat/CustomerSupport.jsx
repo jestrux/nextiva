@@ -27,7 +27,9 @@ export default function CustomerSupport() {
     },
   ];
   return (
-    <section className={"py-20 "}>
+    <section className={"py-20  relative"}>
+      <div className="pointer-events-none absolute inset-x-6 top-0 h-px bg-gradient-to-r from-content/[0.03] via-content/50 to-content-[0.03]"></div>
+      <div className="top-highlight-gradient"></div>
       <div className={"container md:px-12 space-y-14"}>
         <div className={"flex space-x-32"}>
           <div className={"  "}>
@@ -62,7 +64,6 @@ export default function CustomerSupport() {
                     fill="#76E5B7"
                   />
                 </svg>
-                {/*    TODO: Add missing svg icon*/}
                 <span className={"text-sm"}>Unified App</span>
               </p>
 
@@ -71,7 +72,6 @@ export default function CustomerSupport() {
                   "bg-[#393940] flex items-center space-x-1 tracking-wide w-fit text-[#EFDCA2] px-4 py-2 rounded-xl"
                 }
               >
-                {/*    TODO: Add missing svg icon*/}
                 <svg
                   width="24"
                   height="24"
@@ -91,7 +91,7 @@ export default function CustomerSupport() {
               </p>
             </div>
 
-            <h3 className={"text-5xl font-semibold leading-[3.5rem]"}>
+            <h3 className={"text-[2.8rem] font-medium leading-[3.3rem]"}>
               Live chat with messengers <br />
               all in a single place
             </h3>
