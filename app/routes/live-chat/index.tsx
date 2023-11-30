@@ -2,6 +2,7 @@ import type { MetaFunction } from "@remix-run/node";
 import CustomerSupport from "~/routes/live-chat/CustomerSupport";
 import AIChatBot from "~/routes/live-chat/AiChatBot";
 import Customization from "~/routes/live-chat/Customization";
+import AuraSection from "~/routes/live-chat/AuraSection";
 
 export const meta: MetaFunction = () => {
   return [
@@ -193,6 +194,7 @@ export default function AboutUsPage() {
       <CustomerSupport />
       <AIChatBot />
       <Customization />
+      <AuraSection />
     </>
   );
 }
