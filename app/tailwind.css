@@ -65,6 +65,16 @@
 	);
 }
 
+.left-shadow-gradient {
+	background: linear-gradient(
+		90deg,
+		rgba(255, 255, 255, 0) 0%,
+		rgba(255, 255, 255, 0) 0.01%,
+		#ffffff 50.52%,
+		rgba(255, 255, 255, 0) 100%
+	);
+}
+
 .large-card-gradient {
 	background: linear-gradient(
 			213.28deg,
@@ -225,10 +235,11 @@
 	}
 
 	.button {
-		@apply tracking-normal transition-colors duration-150 inline-flex font-semibold md:font-medium md:text-base/none text-white items-center justify-center px-5 md:px-7 h-12 md:h-14 border rounded-full bg-primary hover:opacity-80 border-primary;
+		@apply tracking-normal transition-colors duration-150 inline-flex font-semibold md:font-medium md:text-base/none text-white items-center justify-center gap-2 px-5 md:px-7 h-12 md:h-14 border rounded-full bg-primary hover:opacity-80 border-primary;
 	}
-	.button-outline{
-		@apply tracking-normal transition-colors duration-150 inline-flex font-semibold md:font-medium md:text-base/none text-white items-center justify-center px-5 md:px-7 h-12 md:h-14 border rounded-full  hover:opacity-80 border-white;
+
+	.button-small {
+		@apply h-10 md:h-12 text-sm/none;
 	}
 
 	.button-white {

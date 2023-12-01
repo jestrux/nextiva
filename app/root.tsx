@@ -72,6 +72,8 @@ export default function App() {
 
 				<AppFooter />
 
+				<script src="https://unpkg.com/alpinejs@3.13.3/dist/cdn.min.js" defer></script>
+
 				<ScrollRestoration />
 				<Scripts />
 				<LiveReload />

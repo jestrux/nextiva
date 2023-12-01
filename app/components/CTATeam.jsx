@@ -47,7 +47,7 @@ export default function CTATeam({
             </a>
           </div>
 
-          <div className="absolute inset-y-0 -right-40">
+          <div className="absolute inset-y-0 right-0">
             <img className="h-full" src="img/customer-stories/cta.png" alt="" />
           </div>
         </div>

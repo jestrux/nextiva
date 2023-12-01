@@ -7,7 +7,7 @@ import Banner from "./Banner";
 import MessagingPlatforms from "./MessagingPlatforms";
 import SalesAndMarketing from "./SalesAndMarketing";
 import Results from "./Results";
-import FAQ from "./FAQ";
+import FAQ from "~/components/FAQ";
 
 export const meta: MetaFunction = () => {
 	return [
