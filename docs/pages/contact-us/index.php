@@ -1,13 +1,14 @@
-<?php include_once "../shared/head.php"; ?>
+<?php 
+require __DIR__.'/../../shared/head.php';
+?>
 
 <body class="bg-canvas text-content">
     <?php
-    include_once "../shared/nav.php";
+    require __DIR__.'/../../shared/nav.php';
 
     include_once "content.php";
-    include_once "faq.php";
 
-    include_once "../shared/footer.php";
+    require __DIR__.'/../../shared/footer.php';
     ?>
 
     <script src="//unpkg.com/alpinejs" defer></script>

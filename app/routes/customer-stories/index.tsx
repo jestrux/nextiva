@@ -8,7 +8,7 @@ import Results from "~/components/Results";
 
 function CustomerStories() {
 	return (
-		<div className="mt-12">
+		<div className="mt-8">
 			<Banner />
 			<Statistics />
 			<Testimonial />

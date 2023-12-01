@@ -1,15 +1,15 @@
 import type { MetaFunction } from "@remix-run/node";
 
 import CTA from "~/components/CTA";
-import Banner from "~/components/Banner";
+import Banner from "./home/Banner";
 import Testimonials from "~/components/Testimonials";
-import Companies from "~/components/Companies";
+import Companies from "./home/Companies";
 import Businesses from "~/components/Businesses";
-import FeatureCallout from "~/components/FeatureCallout";
-import Products from "~/components/Products";
-import Trends from "~/components/Trends";
-import PowerOfPlatform from "~/components/PowerOfPlatform";
-import NextivaPromise from "~/components/NextivaPromise";
+import FeatureCallout from "./home/FeatureCallout";
+import Products from "./home/Products";
+import Trends from "./home/Trends";
+import PowerOfPlatform from "./home/PowerOfPlatform";
+import NextivaPromise from "./home/NextivaPromise";
 
 export const meta: MetaFunction = () => {
 	return [
