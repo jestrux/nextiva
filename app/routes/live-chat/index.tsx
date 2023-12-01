@@ -31,9 +31,9 @@ export default function AboutUsPage() {
 			<AIChatBot />
 			<Customization />
 			<CustomerRelationship />
-			<div className="-mt-12 mb-32">
-				<Results />
-			</div>
+
+			<Results className="-mt-12 mb-32" />
+
 			<CTATeam
 				title={`Ready to make business\nconversations better?`}
 				actionText="Let's talk business"

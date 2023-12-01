@@ -24,12 +24,11 @@ const ResultCard = function ({ image, action, children, large = true }) {
 	);
 };
 
-export default function Results({ large = true }) {
+export default function Results({ large = true, className = "" }) {
 	return (
 		<div
-			className={`${
-				large ? "max-w-6xl" : "max-w-5xl"
-			} mx-auto overflow-visible`}
+			className={`${className}
+			${large ? "max-w-6xl" : "max-w-5xl"} mx-auto overflow-visible`}
 		>
 			<h2 className="text-2xl md:text-5xl/tight font-medium">
 				Nextiva customers realize value and
