@@ -227,6 +227,10 @@
 		@apply bg-white !text-primary border-white;
 	}
 
+	.button-outline {
+		@apply bg-transparent text-content border-content/80;
+	}
+
 	strong {
 		@apply text-primary font-semibold;
 	}
