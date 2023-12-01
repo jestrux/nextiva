@@ -1,19 +1,21 @@
 import Banner from "./Banner";
 import Statistics from "./Statistics";
 import Testimonial from "./Testimonial";
-import Results from "./Results";
 import UpgradingCustomerService from "./UpgradingCustomerService";
 import OtherCustomerStories from "./OtherCustomerStories";
 import CTATeam from "../../components/CTATeam";
+import Results from "~/components/Results";
 
 function CustomerStories() {
 	return (
-		<div className="mt-12">
+		<div className="mt-8">
 			<Banner />
 			<Statistics />
 			<Testimonial />
 			<UpgradingCustomerService />
-			<Results />
+
+			<Results className="pt-12 pb-32" />
+
 			<OtherCustomerStories />
 			<CTATeam />
 		</div>

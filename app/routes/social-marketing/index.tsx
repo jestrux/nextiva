@@ -6,8 +6,8 @@ import CTATeam from "~/components/CTATeam";
 import Banner from "./Banner";
 import ManageSocialMedia from "./ManageSocialMedia";
 import SalesAndMarketing from "./SalesAndMarketing";
-import Results from "./Results";
-import FAQ from "./FAQ";
+import FAQ from "~/components/FAQ";
+import Results from "~/components/Results";
 
 export const meta: MetaFunction = () => {
 	return [
@@ -35,7 +35,7 @@ export default function Index() {
 
 			<SalesAndMarketing />
 
-			<Results />
+			<Results className="mb-24" />
 
 			<CTATeam
 				title={`Ready to make business\nconversations better?`}

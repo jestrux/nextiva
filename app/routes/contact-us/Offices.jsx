@@ -32,14 +32,14 @@ const Offices = () => {
 					Our Offices
 				</h2>
 
-				<div className="mt-12">
+				<div className="mt-12" x-data="{currentOfficeTab: 0}">
 					<div className="grid grid-cols-4 gap-3 relative">
 						{offices.map((office, index) => (
 							<button
 								key={index}
-								className={`${
-									index == 0 ? "bg-content text-canvas" : ""
-								} rounded-xl h-14 border border-content/10 flex items-center justify-center`}
+								x-on:click={`currentOfficeTab = ${index}`}
+								x-bind:class={`currentOfficeTab == ${index} && 'bg-content text-canvas'`}
+								class="rounded-xl h-14 border border-content/20 flex items-center justify-center"
 							>
 								{office.name}
 							</button>
@@ -50,6 +50,7 @@ const Offices = () => {
 						{offices.map((office, index) => (
 							<div
 								{...(index != 0 ? { "x-cloak": "true" } : {})}
+								x-show={`currentOfficeTab == ${index}`}
 								key={index}
 								className="aspect-[1/0.4] flex gap-6"
 							>
