@@ -1,4 +1,5 @@
 import Leader from "~/routes/leadership/Leader";
+import LeaderDetails from "./details/index.js";
 
 const leaders = [
   {
@@ -75,9 +76,9 @@ export default function Leadership() {
           <h1 className="text-2xl md:text-6xl md:leading-tight tracking-wide font-semibold mb-2 md:mb-4">
             Building the future of <br /> businesses.
           </h1>
-          <p className="mb-8 text-[#B6B7BE] font-thin md:text-[17px] tracking-wide">
+          <p className="mb-8 max-w-2xl opacity-70 font-thin md:text-[17px] tracking-wide">
             Empowering employees, partners, and customers with the best tools in
-            the <br /> industry to help their businesses grow fearlessly.
+            the industry to help their businesses grow fearlessly.
           </p>
         </div>
       </section>
@@ -90,6 +91,8 @@ export default function Leadership() {
           ))}
         </div>
       </section>
+
+      <LeaderDetails />
     </>
   );
 }
