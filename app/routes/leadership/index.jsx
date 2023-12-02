@@ -1,5 +1,5 @@
 import Leader from "~/routes/leadership/Leader";
-import LeaderDetails from "./details/index.js";
+import Br from "~/components/Br.jsx";
 
 const leaders = [
   {
@@ -71,28 +71,29 @@ const leaders = [
 export default function Leadership() {
   return (
     <>
-      <section className={"pt-20 relative"}>
-        <div className="container px-10">
-          <h1 className="text-2xl md:text-6xl md:leading-tight tracking-wide font-semibold mb-2 md:mb-4">
-            Building the future of <br /> businesses.
+      <section className="md:py-20  md:px-0 ">
+        <div className=" md:max-w-6xl mx-auto">
+          <h1 className="text-2xl md:text-6xl md:leading-tight font-medium mb-2 md:mb-4">
+            Building the future of <Br /> businesses.
           </h1>
-          <p className="mb-8 max-w-2xl opacity-70 font-thin md:text-[17px] tracking-wide">
+          <p className="mb-8  max-w-2xl opacity-80 font-normal text-sm/loose md:text-lg/loose">
             Empowering employees, partners, and customers with the best tools in
             the industry to help their businesses grow fearlessly.
           </p>
         </div>
       </section>
 
-      <section className={"pt-10 pb-20 relative"}>
+      <section className={"pb-20 relative"}>
         <div className={"bottom-highlight-gradient"}></div>
-        <div className="container gap-10 grid grid-cols-4 px-10">
+        <div className="md:max-w-6xl mx-auto gap-x-7 gap-y-16 grid grid-cols-4 ">
           {leaders.map((leader) => (
             <Leader key={leader.name} {...leader} />
           ))}
         </div>
       </section>
 
-      <LeaderDetails />
+      {/* left slide over*/}
+      {/*<LeaderDetails />*/}
     </>
   );
 }
