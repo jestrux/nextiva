@@ -14,6 +14,7 @@ const MediaFeatureSection = ({
   description = "Customers want to engage with you on any channel. Meet them where they are. Live Chat, WhatsApp, Facebook messenger, and Instagram DMs in one place.",
   primaryAction,
   secondaryAction,
+  featuresNumberOfColumns = 4,
   features,
 }) => {
   return (
@@ -37,7 +38,10 @@ const MediaFeatureSection = ({
         </div>
       </div>
 
-      <FeatureList features={features} />
+      <FeatureList
+        features={features}
+        numberOfColumns={featuresNumberOfColumns}
+      />
     </div>
   );
 };
