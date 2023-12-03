@@ -21,9 +21,9 @@ const experiences = [
   },
 ];
 
-export default function LeaderDetails() {
+export default function BoardOfDirectorDetails() {
   return (
-    <>
+    <div x-cloak x-show="selectedLeader">
       {/*overlay */}
       <div
         style={{ zIndex: 9998 }}
@@ -47,7 +47,7 @@ export default function LeaderDetails() {
                 <div className=" py-4 z-10 bg-primary-darker sticky top-0 w-full flex border-b justify-between">
                   <div className={"flex space-x-2.5 "}>
                     {/* previous button */}
-                    <button>
+                    <button x-on:click="previousLeader()">
                       <svg
                         width="52"
                         height="52"
@@ -66,7 +66,7 @@ export default function LeaderDetails() {
                     </button>
 
                     {/* next button */}
-                    <button>
+                    <button x-on:click="nextLeader()">
                       <svg
                         width="52"
                         height="52"
@@ -89,6 +89,7 @@ export default function LeaderDetails() {
                   <button
                     type="button"
                     className="relative rounded-md text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
+                    x-on:click="selectLeader()"
                   >
                     <span className="absolute -inset-2.5"></span>
                     <span className="sr-only">Close panel</span>
@@ -112,9 +113,10 @@ export default function LeaderDetails() {
                 <div className="relative mt-6 flex-1 space-y-14 ">
                   {/* biography */}
                   <div className={"flex pt-5 space-x-6"}>
-                    <div className={"h-64 rounded-lg w-48 bg-red-500"}>
+                    <div className={"h-64 rounded-lg w-48 "}>
                       <img
-                        src="/img/leadership/SenthilVelayuthan2.png"
+                        x-bind:src="'img/leadership/' + selectedLeader.avatar"
+                        src="/img/leadership/SenthilVelayuthan.png"
                         alt=""
                       />
                     </div>
@@ -132,10 +134,10 @@ export default function LeaderDetails() {
                         and delight their customers across multiple channels."
                       </p>
                       <div className={"space-y-2"}>
-                        <p className={"flex font-medium text-sm"}>
+                        <p className={"flex font-medium text-sm"} x-text="selectedLeader.name">
                           Senthil Velayuthan
                         </p>
-                        <small className={"opacity-70"}>
+                        <small className={"opacity-70"} x-text="selectedLeader.position">
                           Chief Product & Technology Officer
                         </small>
                       </div>
@@ -146,7 +148,7 @@ export default function LeaderDetails() {
                     <h3 className={"font-medium border-b pb-6 "}>Education</h3>
                     <div className={"flex gap-8 pt-6"}>
                       {[...Array(2)].map((_, index) => (
-                        <div className={"flex flex-col gap-y-2"}>
+                        <div className={"flex flex-col gap-y-2"} key={index}>
                           <p className={"text-sm"}>Arizona State University</p>
                           <small
                             className={"text-white/50 text-xs max-w-[14rem] "}
@@ -164,31 +166,26 @@ export default function LeaderDetails() {
                       Experience
                     </h3>
                     <div className={"flex flex-wrap gap-y-9 gap-x-10 pt-6"}>
-                      {experiences.map(
-                        ({ company, position, duration }, index) => (
+                      {experiences.map(({ company, position, duration }) => (
+                        <div className={"flex flex-col gap-y-2"} key={company}>
                           <div
-                            className={"flex flex-col gap-y-2"}
-                            key={company}
+                            className={
+                              "flex justify-between gap-10 items-center"
+                            }
                           >
-                            <div
-                              className={
-                                "flex justify-between gap-10 items-center"
-                              }
-                            >
-                              <p className={"text-sm"}>{company}</p>
+                            <p className={"text-sm"}>{company}</p>
 
-                              <small className={"text-white/50 text-xs "}>
-                                {duration}
-                              </small>
-                            </div>
-                            <small
-                              className={"text-white/50 text-xs tracking-wide"}
-                            >
-                              {position}
+                            <small className={"text-white/50 text-xs "}>
+                              {duration}
                             </small>
                           </div>
-                        ),
-                      )}
+                          <small
+                            className={"text-white/50 text-xs tracking-wide"}
+                          >
+                            {position}
+                          </small>
+                        </div>
+                      ))}
                     </div>
                   </div>
 
@@ -230,6 +227,6 @@ export default function LeaderDetails() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
