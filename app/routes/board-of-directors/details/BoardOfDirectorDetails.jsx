@@ -23,7 +23,7 @@ const experiences = [
 
 export default function BoardOfDirectorDetails() {
   return (
-    <>
+    <div x-cloak x-show="selectedLeader">
       {/*overlay */}
       <div
         style={{ zIndex: 9998 }}
@@ -47,7 +47,7 @@ export default function BoardOfDirectorDetails() {
                 <div className=" py-4 z-10 bg-primary-darker sticky top-0 w-full flex border-b justify-between">
                   <div className={"flex space-x-2.5 "}>
                     {/* previous button */}
-                    <button>
+                    <button x-on:click="previousLeader()">
                       <svg
                         width="52"
                         height="52"
@@ -66,7 +66,7 @@ export default function BoardOfDirectorDetails() {
                     </button>
 
                     {/* next button */}
-                    <button>
+                    <button x-on:click="nextLeader()">
                       <svg
                         width="52"
                         height="52"
@@ -89,6 +89,7 @@ export default function BoardOfDirectorDetails() {
                   <button
                     type="button"
                     className="relative rounded-md text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
+                    x-on:click="selectLeader()"
                   >
                     <span className="absolute -inset-2.5"></span>
                     <span className="sr-only">Close panel</span>
@@ -114,6 +115,7 @@ export default function BoardOfDirectorDetails() {
                   <div className={"flex pt-5 space-x-6"}>
                     <div className={"h-64 rounded-lg w-48 "}>
                       <img
+                        x-bind:src="'img/board-of-directors/' + selectedLeader.avatar"
                         src="/img/board-of-directors/SenthilVelayuthan.png"
                         alt=""
                       />
@@ -132,10 +134,10 @@ export default function BoardOfDirectorDetails() {
                         and delight their customers across multiple channels."
                       </p>
                       <div className={"space-y-2"}>
-                        <p className={"flex font-medium text-sm"}>
+                        <p className={"flex font-medium text-sm"} x-text="selectedLeader.name">
                           Senthil Velayuthan
                         </p>
-                        <small className={"opacity-70"}>
+                        <small className={"opacity-70"} x-text="selectedLeader.position">
                           Chief Product & Technology Officer
                         </small>
                       </div>
@@ -225,6 +227,6 @@ export default function BoardOfDirectorDetails() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

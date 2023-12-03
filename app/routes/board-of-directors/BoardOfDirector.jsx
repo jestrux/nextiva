@@ -1,6 +1,6 @@
-export function BoardOfDirector({ name, position, avatar }) {
+export function BoardOfDirector({ name, position, avatar, index }) {
   return (
-    <div className={"space-y-2.5"}>
+    <div className={"space-y-2.5"} x-on:click={`selectLeader(${index})`}>
       <div className={"h-72 bg-gray-100 rounded-xl overflow-hidden"}>
         <img
           src={`img/board-of-directors/${avatar}`}
