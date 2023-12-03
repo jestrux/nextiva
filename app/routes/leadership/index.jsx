@@ -1,4 +1,5 @@
-import Leader from "~/routes/leadership/Leader";
+import LeaderDetails from "./details/index";
+import Leader from "./Leader";
 import Br from "~/components/Br.jsx";
 
 const leaders = [
@@ -93,7 +94,7 @@ export default function Leadership() {
       </section>
 
       {/* left slide over*/}
-      {/*<LeaderDetails />*/}
+      <LeaderDetails />
     </>
   );
 }
