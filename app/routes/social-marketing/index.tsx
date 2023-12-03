@@ -8,41 +8,49 @@ import ManageSocialMedia from "./ManageSocialMedia";
 import SalesAndMarketing from "./SalesAndMarketing";
 import FAQ from "~/components/FAQ";
 import Results from "~/components/Results";
+import Divider from "~/components/Divider";
+import AIAndAutomation from "~/routes/social-marketing/AIAndAutomation";
+import WorkflowsAndAutomations from "~/routes/social-marketing/WorkflowsAndAutomations";
 
 export const meta: MetaFunction = () => {
-	return [
-		{ title: "Nextiva Messenger" },
-		{
-			name: "description",
-			content:
-				"Nextiva is a software company that enables all your business communications through one collaboration tool. Get more done using fewer apps. Start your free trial!",
-		},
-	];
+  return [
+    { title: "Nextiva Messenger" },
+    {
+      name: "description",
+      content:
+        "Nextiva is a software company that enables all your business communications through one collaboration tool. Get more done using fewer apps. Start your free trial!",
+    },
+  ];
 };
 
 export default function Index() {
-	return (
-		<div className="mt-8">
-			<Banner />
+  return (
+    <div className="mt-8">
+      <Banner />
+      <section className="py-20 relative z-10">
+        {/*  @ts-ignore*/}
+        <Divider top />
+        <Businesses title={`Trusted by local brands\nand businesses`} />
+        {/*  @ts-ignore*/}
+        <Divider bottom />
+      </section>
 
-			<section className="py-20 relative z-10">
-				<div className="pointer-events-none absolute inset-x-6 top-0 h-px bg-gradient-to-r from-content/[0.03] via-content/70 to-content-[0.03]"></div>
-				<Businesses title={`Trusted by local brands\nand businesses`} />
-				<div className="pointer-events-none absolute inset-x-6 bottom-0 h-px bg-gradient-to-r from-content/[0.03] via-content/40 to-content-[0.03]"></div>
-			</section>
+      <ManageSocialMedia />
 
-			<ManageSocialMedia />
+      <SalesAndMarketing />
 
-			<SalesAndMarketing />
+      <AIAndAutomation />
 
-			<Results className="mb-24" />
+      <WorkflowsAndAutomations />
 
-			<CTATeam
-				title={`Ready to make business\nconversations better?`}
-				actionText="Let's talk business"
-			/>
+      <Results className="mb-24" />
 
-			<FAQ />
-		</div>
-	);
+      <CTATeam
+        title={`Ready to make business\nconversations better?`}
+        actionText="Let's talk business"
+      />
+
+      <FAQ />
+    </div>
+  );
 }
