@@ -1,61 +1,112 @@
 <div x-data="leadership">
     <section class="md:py-20  md:px-0 ">
         <div class=" md:max-w-6xl mx-auto">
-            <h1 class="text-2xl md:text-6xl md:leading-tight font-medium mb-2 md:mb-4">Meet our Board of <span class="hidden md:inline"><br></span> Directors</h1>
-            <p class="mb-8  max-w-2xl opacity-80 font-normal text-sm/loose md:text-lg/loose">Our Board of Directors brings together wide experience, deep expertise, and sound judgment to help chart a strong path forward.</p>
+            <h1 class="text-2xl md:text-6xl md:leading-tight font-medium mb-2 md:mb-4">Building the future of <span class="hidden md:inline"><br></span> businesses.</h1>
+            <p class="mb-8  max-w-2xl opacity-80 font-normal text-sm/loose md:text-lg/loose">Empowering employees, partners, and customers with the best tools in the industry to help their businesses grow fearlessly.</p>
         </div>
     </section>
     <section class="pb-20 relative">
         <div class="bottom-highlight-gradient"></div>
         <div class="md:max-w-6xl mx-auto gap-x-7 gap-y-16 grid grid-cols-4 ">
             <div class="space-y-2.5" x-on:click="selectLeader(0)">
-                <div class="h-72 bg-gray-100 rounded-xl overflow-hidden"><img src="img/board-of-directors/BobBeauchamp.png" alt="nextiva leader: Bob Beauchamp, Board Member,Advisor, Investor"></div>
+                <div class="h-72 bg-gray-100 rounded-xl overflow-hidden"><img src="img/leadership/TomasGorny.png" alt="nextiva leader: Tomas Gorny, CEO &amp; Co-Founder"></div>
                 <div class="space-y-1 tracking-wide">
-                    <h3 class="font-medium ">Bob Beauchamp</h3>
-                    <p class="text-xs text-white/70 font-light">Board Member,Advisor, Investor</p>
+                    <h3 class="font-medium ">Tomas Gorny</h3>
+                    <p class="text-xs text-white/70 font-light">CEO &amp; Co-Founder</p>
                 </div>
             </div>
             <div class="space-y-2.5" x-on:click="selectLeader(1)">
-                <div class="h-72 bg-gray-100 rounded-xl overflow-hidden"><img src="img/board-of-directors/AlanBlack.png" alt="nextiva leader: Alan Black, Founder, Surfspray Capital"></div>
-                <div class="space-y-1 tracking-wide">
-                    <h3 class="font-medium ">Alan Black</h3>
-                    <p class="text-xs text-white/70 font-light">Founder, Surfspray Capital</p>
-                </div>
-            </div>
-            <div class="space-y-2.5" x-on:click="selectLeader(2)">
-                <div class="h-72 bg-gray-100 rounded-xl overflow-hidden"><img src="img/board-of-directors/JohnConnolly.png" alt="nextiva leader: John Connolly, Founder/Managing Directorat Eaglehead Capital"></div>
-                <div class="space-y-1 tracking-wide">
-                    <h3 class="font-medium ">John Connolly</h3>
-                    <p class="text-xs text-white/70 font-light">Founder/Managing Directorat Eaglehead Capital</p>
-                </div>
-            </div>
-            <div class="space-y-2.5" x-on:click="selectLeader(3)">
-                <div class="h-72 bg-gray-100 rounded-xl overflow-hidden"><img src="img/board-of-directors/TracyConrad.png" alt="nextiva leader: Tracy Conrad, Chief Amazing Officer, Co-Founder"></div>
+                <div class="h-72 bg-gray-100 rounded-xl overflow-hidden"><img src="img/leadership/TracyConrad.png" alt="nextiva leader: Tracy Conrad, Chief Amazing Officer, Co-Founder"></div>
                 <div class="space-y-1 tracking-wide">
                     <h3 class="font-medium ">Tracy Conrad</h3>
                     <p class="text-xs text-white/70 font-light">Chief Amazing Officer, Co-Founder</p>
                 </div>
             </div>
-            <div class="space-y-2.5" x-on:click="selectLeader(4)">
-                <div class="h-72 bg-gray-100 rounded-xl overflow-hidden"><img src="img/board-of-directors/TomasGorny.png" alt="nextiva leader: Tomas Gorny, Chairman, CEO, &amp; Co-Founder"></div>
+            <div class="space-y-2.5" x-on:click="selectLeader(2)">
+                <div class="h-72 bg-gray-100 rounded-xl overflow-hidden"><img src="img/leadership/SenthilVelayuthan.png" alt="nextiva leader: Senthil Velayuthan, Chief Product &amp; Technology Officer"></div>
                 <div class="space-y-1 tracking-wide">
-                    <h3 class="font-medium ">Tomas Gorny</h3>
-                    <p class="text-xs text-white/70 font-light">Chairman, CEO, &amp; Co-Founder</p>
+                    <h3 class="font-medium ">Senthil Velayuthan</h3>
+                    <p class="text-xs text-white/70 font-light">Chief Product &amp; Technology Officer</p>
+                </div>
+            </div>
+            <div class="space-y-2.5" x-on:click="selectLeader(3)">
+                <div class="h-72 bg-gray-100 rounded-xl overflow-hidden"><img src="img/leadership/AnneBrennan.png" alt="nextiva leader: Anne Brennan, Chief Financial Officer"></div>
+                <div class="space-y-1 tracking-wide">
+                    <h3 class="font-medium ">Anne Brennan</h3>
+                    <p class="text-xs text-white/70 font-light">Chief Financial Officer</p>
+                </div>
+            </div>
+            <div class="space-y-2.5" x-on:click="selectLeader(4)">
+                <div class="h-72 bg-gray-100 rounded-xl overflow-hidden"><img src="img/leadership/YanivMasjedi.png" alt="nextiva leader: Yaniv Masjedi, Chief Marketing Officer"></div>
+                <div class="space-y-1 tracking-wide">
+                    <h3 class="font-medium ">Yaniv Masjedi</h3>
+                    <p class="text-xs text-white/70 font-light">Chief Marketing Officer</p>
                 </div>
             </div>
             <div class="space-y-2.5" x-on:click="selectLeader(5)">
-                <div class="h-72 bg-gray-100 rounded-xl overflow-hidden"><img src="img/board-of-directors/StephenKerns.png" alt="nextiva leader: Stephen Kerns, Managing Director, Goldman Sachs Growth Equity"></div>
+                <div class="h-72 bg-gray-100 rounded-xl overflow-hidden"><img src="img/leadership/ChrisReaburn.png" alt="nextiva leader: Chris Reaburn, Chief of Strategic Execution"></div>
                 <div class="space-y-1 tracking-wide">
-                    <h3 class="font-medium ">Stephen Kerns</h3>
-                    <p class="text-xs text-white/70 font-light">Managing Director, Goldman Sachs Growth Equity</p>
+                    <h3 class="font-medium ">Chris Reaburn</h3>
+                    <p class="text-xs text-white/70 font-light">Chief of Strategic Execution</p>
+                </div>
+            </div>
+            <div class="space-y-2.5" x-on:click="selectLeader(6)">
+                <div class="h-72 bg-gray-100 rounded-xl overflow-hidden"><img src="img/leadership/JoshLesavoy.png" alt="nextiva leader: Josh Lesavoy, Chief Information Officer"></div>
+                <div class="space-y-1 tracking-wide">
+                    <h3 class="font-medium ">Josh Lesavoy</h3>
+                    <p class="text-xs text-white/70 font-light">Chief Information Officer</p>
+                </div>
+            </div>
+            <div class="space-y-2.5" x-on:click="selectLeader(7)">
+                <div class="h-72 bg-gray-100 rounded-xl overflow-hidden"><img src="img/leadership/MarkGreen.png" alt="nextiva leader: Mark Green, Chief People Officer"></div>
+                <div class="space-y-1 tracking-wide">
+                    <h3 class="font-medium ">Mark Green</h3>
+                    <p class="text-xs text-white/70 font-light">Chief People Officer</p>
+                </div>
+            </div>
+            <div class="space-y-2.5" x-on:click="selectLeader(8)">
+                <div class="h-72 bg-gray-100 rounded-xl overflow-hidden"><img src="img/leadership/MarkGreen.png" alt="nextiva leader: Mitch Haber, Chief of Strategic Growth"></div>
+                <div class="space-y-1 tracking-wide">
+                    <h3 class="font-medium ">Mitch Haber</h3>
+                    <p class="text-xs text-white/70 font-light">Chief of Strategic Growth</p>
+                </div>
+            </div>
+            <div class="space-y-2.5" x-on:click="selectLeader(9)">
+                <div class="h-72 bg-gray-100 rounded-xl overflow-hidden"><img src="img/leadership/KenMcMahon.png" alt="nextiva leader: Ken McMahon, Chief Customer Officer"></div>
+                <div class="space-y-1 tracking-wide">
+                    <h3 class="font-medium ">Ken McMahon</h3>
+                    <p class="text-xs text-white/70 font-light">Chief Customer Officer</p>
+                </div>
+            </div>
+            <div class="space-y-2.5" x-on:click="selectLeader(10)">
+                <div class="h-72 bg-gray-100 rounded-xl overflow-hidden"><img src="img/leadership/LukasGorny.png" alt="nextiva leader: Lukas Gorny, EVP, Office of Amazing"></div>
+                <div class="space-y-1 tracking-wide">
+                    <h3 class="font-medium ">Lukas Gorny</h3>
+                    <p class="text-xs text-white/70 font-light">EVP, Office of Amazing</p>
+                </div>
+            </div>
+            <div class="space-y-2.5" x-on:click="selectLeader(11)">
+                <div class="h-72 bg-gray-100 rounded-xl overflow-hidden"><img src="img/leadership/KimLamont.png" alt="nextiva leader: Kim Lamont, Chief of Staff"></div>
+                <div class="space-y-1 tracking-wide">
+                    <h3 class="font-medium ">Kim Lamont</h3>
+                    <p class="text-xs text-white/70 font-light">Chief of Staff</p>
+                </div>
+            </div>
+            <div class="space-y-2.5" x-on:click="selectLeader(12)">
+                <div class="h-72 bg-gray-100 rounded-xl overflow-hidden"><img src="img/leadership/JohnMurphy.png" alt="nextiva leader: John Murphy, General Counsel"></div>
+                <div class="space-y-1 tracking-wide">
+                    <h3 class="font-medium ">John Murphy</h3>
+                    <p class="text-xs text-white/70 font-light">General Counsel</p>
                 </div>
             </div>
         </div>
     </section>
+
     <template x-if="selectedLeader">
+
         <div>
-            <div style="z-index:9998" class="fixed inset-0 bg-[#0B1029] bg-opacity-75 transition-opacity"></div>
-            <div style="z-index:9999" class="fixed inset-0 overflow-hidden ">
+            <div class="fixed inset-0 bg-[#0B1029] bg-opacity-75 transition-opacity" style="z-index: 9998;"></div>
+            <div class="fixed inset-0 overflow-hidden " style="z-index: 9999;">
                 <div class="absolute inset-0 overflow-hidden">
                     <div class="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10">
                         <div class="pointer-events-auto relative w-screen bg-amber-200 max-w-xl">
@@ -72,7 +123,7 @@
                                 </div>
                                 <div class="relative mt-6 flex-1 space-y-14 ">
                                     <div class="flex pt-5 space-x-6">
-                                        <div class="h-64 rounded-lg w-48 "><img x-bind:src="'img/board-of-directors/' + selectedLeader.avatar" src="" alt=""></div>
+                                        <div class="h-64 rounded-lg w-48 "><img x-bind:src="'img/leadership/' + selectedLeader.avatar" src="" alt=""></div>
                                         <div class="flex-1 gap-y-8 flex flex-col justify-between">
                                             <p class="text-lg leading-relaxed tracking-wide font-medium">"Nextiva believes that customer satisfaction is the key to business success. We will provide industry leading solutions that enable businesses to understand, engage and delight their customers across multiple channels."</p>
                                             <div class="space-y-2">
@@ -137,19 +188,9 @@
     document.addEventListener('alpine:init', () => {
         Alpine.data('leadership', () => ({
             leaders: [{
-                    name: "Bob Beauchamp",
-                    position: "Board Member,Advisor, Investor",
-                    avatar: "BobBeauchamp.png",
-                },
-                {
-                    name: "Alan Black",
-                    position: "Founder, Surfspray Capital",
-                    avatar: "AlanBlack.png",
-                },
-                {
-                    name: "John Connolly",
-                    position: "Founder/Managing Directorat Eaglehead Capital",
-                    avatar: "JohnConnolly.png",
+                    name: "Tomas Gorny",
+                    position: "CEO & Co-Founder",
+                    avatar: "TomasGorny.png",
                 },
                 {
                     name: "Tracy Conrad",
@@ -157,14 +198,59 @@
                     avatar: "TracyConrad.png",
                 },
                 {
-                    name: "Tomas Gorny",
-                    position: "Chairman, CEO, & Co-Founder",
-                    avatar: "TomasGorny.png",
+                    name: "Senthil Velayuthan",
+                    position: "Chief Product & Technology Officer",
+                    avatar: "SenthilVelayuthan.png",
                 },
                 {
-                    name: "Stephen Kerns",
-                    position: "Managing Director, Goldman Sachs Growth Equity",
-                    avatar: "StephenKerns.png",
+                    name: "Anne Brennan",
+                    position: "Chief Financial Officer",
+                    avatar: "AnneBrennan.png",
+                },
+                {
+                    name: "Yaniv Masjedi",
+                    position: "Chief Marketing Officer",
+                    avatar: "YanivMasjedi.png",
+                },
+                {
+                    name: "Chris Reaburn",
+                    position: "Chief of Strategic Execution",
+                    avatar: "ChrisReaburn.png",
+                },
+                {
+                    name: "Josh Lesavoy",
+                    position: "Chief Information Officer",
+                    avatar: "JoshLesavoy.png",
+                },
+                {
+                    name: "Mark Green",
+                    position: "Chief People Officer",
+                    avatar: "MarkGreen.png",
+                },
+                {
+                    name: "Mitch Haber",
+                    position: "Chief of Strategic Growth",
+                    avatar: "MarkGreen.png",
+                },
+                {
+                    name: "Ken McMahon",
+                    position: "Chief Customer Officer",
+                    avatar: "KenMcMahon.png",
+                },
+                {
+                    name: "Lukas Gorny",
+                    position: "EVP, Office of Amazing",
+                    avatar: "LukasGorny.png",
+                },
+                {
+                    name: "Kim Lamont",
+                    position: "Chief of Staff",
+                    avatar: "KimLamont.png",
+                },
+                {
+                    name: "John Murphy",
+                    position: "General Counsel",
+                    avatar: "JohnMurphy.png",
                 },
             ],
             selectedLeader: null,
