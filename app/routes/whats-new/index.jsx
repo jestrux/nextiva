@@ -157,7 +157,7 @@ const WhatsNew = () => {
 				],
 			},
 			{
-				title: "Nextiva Call Center:",
+				title: "Nextiva Call Center",
 				features: ["Live train agents during active calls"],
 			},
 		],

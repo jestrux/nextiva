@@ -32,7 +32,7 @@
                                 </div>
                             </div>
                             <div class="text-sm">
-                                <div class="text-base font-medium mb-3">Nextiva Call Center::</div>
+                                <div class="text-base font-medium mb-3">Nextiva Call Center:</div>
                                 <div class="pl-5">
                                     <ul class="list-disc text-content/70 flex flex-col gap-4">
                                         <li>Live train agents during active calls</li>
