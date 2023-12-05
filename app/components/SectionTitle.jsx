@@ -25,6 +25,7 @@ export default function SectionTitle({
   primaryAction,
   secondaryAction,
   linkAction,
+  large = false,
   centered = false,
 }) {
   return (
@@ -43,7 +44,7 @@ export default function SectionTitle({
       )}
 
       <div className="mt-6">
-        <h3 className="text-2xl md:text-5xl/[1.1]">
+        <h3 className={`text-2xl md:text-5xl/[1.1] ${large && 'font-medium'}`}>
           {title.split("\n").map((line) => (
             <>
               {line}

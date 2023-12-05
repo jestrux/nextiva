@@ -7,6 +7,7 @@ const Integrations = () => {
 		<section className="py-20 mb-20 relative">
 			<SectionHighlight />
 			<SectionTitle
+				large
 				centered
 				title={"Seamlessly integrate with Gmail,\nOutlook and IMAP"}
 				description="Designed to seamlessly work with the most popular email delivery services."

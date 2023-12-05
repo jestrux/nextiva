@@ -11,7 +11,7 @@
 		</div><img class="w-full" src="img/email/banner.png" alt="">
 		<div class="bottom-highlight-gradient">
 			<div class="w-full flex justify-center" style="opacity:1;position:absolute;bottom:0">
-				<div class="w-full h-px bg-gradient-to-r from-content/[0.03] via-content/50 to-content-[0.03]" style="max-width: 40rem;"></div>
+				<div class="w-full h-px bg-gradient-to-r from-content/[0.03] via-content/50 to-content-[0.03]" style="max-width:40rem"></div>
 			</div>
 		</div>
 	</section>
@@ -38,7 +38,7 @@
 	<div class="relative py-24">
 		<div class="top-highlight-gradient">
 			<div class="w-full flex justify-center" style="opacity:1">
-				<div class="w-full h-px bg-gradient-to-r from-content/[0.03] via-content/50 to-content-[0.03]" style="max-width: 40rem;"></div>
+				<div class="w-full h-px bg-gradient-to-r from-content/[0.03] via-content/50 to-content-[0.03]" style="max-width:40rem"></div>
 			</div>
 		</div>
 		<div class="max-w-6xl mx-auto">
@@ -52,7 +52,7 @@
 								</svg>AI Powered</div>
 						</div>
 						<div class="mt-6">
-							<h3 class="text-2xl md:text-5xl/[1.1]">Boost Email Efficiency<span class="hidden md:inline"><br></span></h3>
+							<h3 class="text-2xl md:text-5xl/[1.1] false">Boost Email Efficiency<span class="hidden md:inline"><br></span></h3>
 							<p class="false mt-4 text-base/loose opacity-70 max-w-xl">AI can handle today most email interactions with customers more reliably and with better response time than humans. Reduce repetitive and mundane emails and tasks, increase response speed and boost customer satisfaction.</p>
 						</div>
 						<div class="mt-8 flex items-center gap-3"><button class="button 
@@ -100,7 +100,7 @@
 	<div class="relative py-24">
 		<div class="top-highlight-gradient">
 			<div class="w-full flex justify-center" style="opacity:1">
-				<div class="w-full h-px bg-gradient-to-r from-content/[0.03] via-content/50 to-content-[0.03]" style="max-width: 40rem;"></div>
+				<div class="w-full h-px bg-gradient-to-r from-content/[0.03] via-content/50 to-content-[0.03]" style="max-width:40rem"></div>
 			</div>
 		</div>
 		<div class="max-w-6xl mx-auto">
@@ -117,7 +117,7 @@
 								</svg>Experience</div>
 						</div>
 						<div class="mt-6">
-							<h3 class="text-2xl md:text-5xl/[1.1]">Assure Compliance<span class="hidden md:inline"><br></span></h3>
+							<h3 class="text-2xl md:text-5xl/[1.1] false">Assure Compliance<span class="hidden md:inline"><br></span></h3>
 							<p class="false mt-4 text-base/loose opacity-70 max-w-xl">Monitor agent interactions and establish safeguards to prevent inappropriate responses or content to be sent to customers. Ensure compliance with local laws and regulations.</p>
 						</div>
 						<div class="mt-8 flex items-center gap-3"><button class="button 
@@ -165,7 +165,7 @@
 	<div class="relative py-24">
 		<div class="top-highlight-gradient">
 			<div class="w-full flex justify-center" style="opacity:1">
-				<div class="w-full h-px bg-gradient-to-r from-content/[0.03] via-content/50 to-content-[0.03]" style="max-width: 40rem;"></div>
+				<div class="w-full h-px bg-gradient-to-r from-content/[0.03] via-content/50 to-content-[0.03]" style="max-width:40rem"></div>
 			</div>
 		</div>
 		<div class="max-w-6xl mx-auto">
@@ -182,7 +182,7 @@
 								</svg>Tickets</div>
 						</div>
 						<div class="mt-6">
-							<h3 class="text-2xl md:text-5xl/[1.1]">Collaborate Seamlessly<span class="hidden md:inline"><br></span></h3>
+							<h3 class="text-2xl md:text-5xl/[1.1] false">Collaborate Seamlessly<span class="hidden md:inline"><br></span></h3>
 							<p class="false mt-4 text-base/loose opacity-70 max-w-xl">Empower Your Customer Facing Teams with Seamless Collaboration on Email: View and share email conversations and history, and escalate messages with a single click.</p>
 						</div>
 						<div class="mt-8 flex items-center gap-3"><button class="button 
@@ -274,7 +274,7 @@
 		<div class="top-highlight-gradient"></div>
 		<div class="flex flex-col items-center text-center">
 			<div class="mt-6">
-				<h3 class="text-2xl md:text-5xl/[1.1]">Seamlessly integrate with Gmail,<span class="hidden md:inline"><br></span>Outlook and IMAP<span class="hidden md:inline"><br></span></h3>
+				<h3 class="text-2xl md:text-5xl/[1.1] font-medium">Seamlessly integrate with Gmail,<span class="hidden md:inline"><br></span>Outlook and IMAP<span class="hidden md:inline"><br></span></h3>
 				<p class="mx-auto mt-4 text-base/loose opacity-70 max-w-xl">Designed to seamlessly work with the most popular email delivery services.</p>
 			</div>
 			<div class="mt-8 flex items-center gap-3"><button class="button 
@@ -292,9 +292,9 @@
 				<div class="flex-1 flex flex-col items-start justify-center gap-6">
 					<div class="rounded-full bg-content/10 p-1 pr-4 flex items-center gap-6">
 						<div class="flex items-center">
-							<div class="h-9 w-9 rounded-full -mr-4" style="z-index: 2;"><img class="h-full w-full object-cover" src="img/customer-stories/team1.png" alt=""></div>
-							<div class="h-9 w-9 rounded-full -mr-4" style="z-index: 1;"><img class="h-full w-full object-cover" src="img/customer-stories/team2.png" alt=""></div>
-							<div class="h-9 w-9 rounded-full -mr-4" style="z-index: 0;"><img class="h-full w-full object-cover" src="img/customer-stories/team3.png" alt=""></div>
+							<div class="h-9 w-9 rounded-full -mr-4" style="z-index:2"><img class="h-full w-full object-cover" src="img/customer-stories/team1.png" alt=""></div>
+							<div class="h-9 w-9 rounded-full -mr-4" style="z-index:1"><img class="h-full w-full object-cover" src="img/customer-stories/team2.png" alt=""></div>
+							<div class="h-9 w-9 rounded-full -mr-4" style="z-index:0"><img class="h-full w-full object-cover" src="img/customer-stories/team3.png" alt=""></div>
 						</div><span class="text-sm font-light opacity-80">Talk to our team</span>
 					</div>
 					<h2 class="text-2xl md:text-5xl/[1.2] mb-2 md:mb-4">Ready to make business<span class="hidden md:inline"><br></span>conversations better?<span class="hidden md:inline"><br></span></h2><a href="#" class="button button-white">Let's talk business</a>
