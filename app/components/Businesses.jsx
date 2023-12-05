@@ -1,4 +1,5 @@
 export default function Businesses({
+	className,
 	title = "Trusted by 100,000+\nbusinesses, including:",
 }) {
 	const featuredBusinesses = ["featured1", "featured2", "featured3"];
@@ -15,7 +16,7 @@ export default function Businesses({
 	];
 
 	return (
-		<>
+		<div className={`${className}`}>
 			<div className="px-6 max-w-7xl mx-auto mb-16 flex gap-12 items-end">
 				<div className="flex-shrink-0 text-3xl">
 					{title.split("\n").map((line) => (
@@ -59,6 +60,6 @@ export default function Businesses({
 					/>
 				))}
 			</div>
-		</>
+		</div>
 	);
 }
