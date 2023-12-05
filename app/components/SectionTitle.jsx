@@ -53,7 +53,7 @@ export default function SectionTitle({
             </>
           ))}
         </h3>
-        <p className="mt-4 text-base/loose opacity-70 max-w-xl">
+        <p className={`${centered && 'mx-auto'} mt-4 text-base/loose opacity-70 max-w-xl`}>
           {description}
         </p>
       </div>

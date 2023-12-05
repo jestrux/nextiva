@@ -71,7 +71,7 @@ const Reviews = () => {
       icon: FaceSmileIcon,
       title: "75%",
       description:
-        "of people can be influenced to install the app on Apple devices through  app reviews.",
+        "of people can be influenced to install the app on Apple devices through app reviews.",
     },
   ];
 

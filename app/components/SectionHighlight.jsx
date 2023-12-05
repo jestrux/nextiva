@@ -10,7 +10,9 @@ export default function SectionHighlight({
 				bottom ? "bottom-highlight-gradient" : "top-highlight-gradient"
 			}`}
 		>
-			{withDivider && <Divider />}
+			{withDivider && (
+				<Divider capped {...(bottom ? { bottom: true } : {})} />
+			)}
 		</div>
 	);
 }
