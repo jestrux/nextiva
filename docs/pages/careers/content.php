@@ -1,3 +1,12 @@
+<style>
+	:root {
+		--border-color: #d3d9e1;
+		--canvas-color: 249 250 254;
+		--card-color: 255 255 255;
+		--content-color: 0 0 0;
+	}
+</style>
+
 <div class="mt-8">
 	<section class="py-20" x-data="careers" x-on:location-changed="location = $event.detail.value" x-on:locationtype-changed="locationType = $event.detail.value" x-on:team-changed="team = $event.detail.value">
 		<div class="max-w-6xl mx-auto">
