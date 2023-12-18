@@ -1,4 +1,5 @@
 import stylesheet from "~/tailwind.css";
+// import lightTheme from "~/theme-mode-light.css";
 // import wpTheme from "~/wp-theme.css";
 import fonts from "~/fonts.css";
 
@@ -19,6 +20,7 @@ import AppFooter from "~/components/AppFooter";
 export const links: LinksFunction = () => [
 	...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
 	// { rel: "stylesheet", href: wpTheme },
+	// { rel: "stylesheet", href: lightTheme },
 	{ rel: "stylesheet", href: stylesheet },
 	{ rel: "stylesheet", href: fonts },
 ];

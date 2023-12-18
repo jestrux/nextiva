@@ -276,7 +276,7 @@
 	}
 
 	.button {
-		@apply tracking-normal transition-colors duration-150 inline-flex font-semibold md:font-medium md:text-base/none text-white items-center justify-center gap-2 px-5 md:px-7 h-12 md:h-14 border rounded-full bg-primary hover:opacity-80 border-primary;
+		@apply tracking-normal transition-colors duration-150 inline-flex font-semibold md:font-medium md:text-base/none !text-white items-center justify-center gap-2 px-5 md:px-7 h-12 md:h-14 border rounded-full bg-primary hover:opacity-80 border-primary;
 	}
 
 	.button-small {
@@ -288,7 +288,7 @@
 	}
 
 	.button-outline {
-		@apply bg-transparent text-content border-content/80;
+		@apply bg-transparent !text-content border-content/80;
 	}
 
 	strong {
