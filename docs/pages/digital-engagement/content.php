@@ -12,249 +12,233 @@
         <div class="max-w-6xl mx-auto"><img class="w-full" src="img/social-marketing/banner.png" alt=""></div>
     </section>
 
-    <?php
-    $images = [
-        "https://nextiva.seahwk.com/wp-content/uploads/2024/01/manage-media.jpg",
-        "https://nextiva.seahwk.com/wp-content/uploads/2024/01/chat-messanging-app.jpg",
-        "https://nextiva.seahwk.com/wp-content/uploads/2024/01/ai-power.jpg",
-        "https://nextiva.seahwk.com/wp-content/uploads/2024/01/integreted-email.jpg",
-        "https://nextiva.seahwk.com/wp-content/uploads/2024/01/monitor-review.jpg",
-    ];
-    ?>
+    <?php include_once "sections.php"; ?>
 
-    <style>
-        .scrollable-section {
-            position: sticky;
-            top: 0;
-            /* padding: 0 50px; */
-            min-height: calc(95vh - 96px);
-            transition: all 0.35s ease-out;
-        }
-
-        .scrollable-section:not(.visible) {
-            opacity: 0;
-            /* transform: translateY(-30%); */
-        }
-
-        .scroll-progress {
-            transition: all 0.35s ease-out;
-        }
-
-        /* .scrollable-sections {
-                height: 500vh;
-                position: relative;
-            }
-
-            .scrollable-section{
-                position: absolute;
-                top: 0;
-                left: 0;
-                bottom: 0;
-            } */
-    </style>
-
-    <div class="relative scrollable-sections">
-        <div class="top-highlight-gradient">
-            <div class="w-full flex justify-center">
-                <div class="w-full h-px bg-gradient-to-r from-content/[0.03] via-content/50 to-content-[0.03]"></div>
-            </div>
-        </div>
-
-        <div class="absolute inset-y-0" style="top: 2rem; left: 2.8rem; z-index: 10">
-            <div class="flex flex-col items-center" style="position: sticky; top: 96px; height: calc(95vh - 96px); width: 4px; gap: 1.5rem">
-                <span class="scroll-current-page">01</span>
-
-                <div class="flex-1 relative" style="width: 1px; background: rgba(255, 255, 255, 0.3)">
-                    <div class="bg-white scroll-progress" style="height: 20%"></div>
+    <section class="py-20 relative">
+        <div class="top-highlight-gradient"></div>
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col items-center text-center">
+                <div class="flex items-center gap-2 text-sm/none">
+                    <div class="bg-warning/20 text-warning h-10 px-5 rounded-xl flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-5">
+                            <path fill-rule="evenodd" d="M12 3.75a6.715 6.715 0 00-3.722 1.118.75.75 0 11-.828-1.25 8.25 8.25 0 0112.8 6.883c0 3.014-.574 5.897-1.62 8.543a.75.75 0 01-1.395-.551A21.69 21.69 0 0018.75 10.5 6.75 6.75 0 0012 3.75zM6.157 5.739a.75.75 0 01.21 1.04A6.715 6.715 0 005.25 10.5c0 1.613-.463 3.12-1.265 4.393a.75.75 0 01-1.27-.8A6.715 6.715 0 003.75 10.5c0-1.68.503-3.246 1.367-4.55a.75.75 0 011.04-.211zM12 7.5a3 3 0 00-3 3c0 3.1-1.176 5.927-3.105 8.056a.75.75 0 11-1.112-1.008A10.459 10.459 0 007.5 10.5a4.5 4.5 0 119 0c0 .547-.022 1.09-.067 1.626a.75.75 0 01-1.495-.123c.041-.495.062-.996.062-1.503a3 3 0 00-3-3zm0 2.25a.75.75 0 01.75.75A15.69 15.69 0 018.97 20.738a.75.75 0 01-1.14-.975A14.19 14.19 0 0011.25 10.5a.75.75 0 01.75-.75zm3.239 5.183a.75.75 0 01.515.927 19.415 19.415 0 01-2.585 5.544.75.75 0 11-1.243-.84 17.912 17.912 0 002.386-5.116.75.75 0 01.927-.515z" clip-rule="evenodd"></path>
+                        </svg>Workflows and automation</div>
                 </div>
-
-                <span class="scroll-total-pages">05</span>
+                <div class="mt-6">
+                    <h3 class="text-5xl font-medium">Features we wouldn't let<span class="hidden md:inline"><br></span> you go without<span class="hidden md:inline"><br></span></h3>
+                    <p class="mt-4 text-base/loose opacity-70 max-w-xl"></p>
+                </div>
+                <div class="mt-8 flex items-center gap-3"></div>
             </div>
-        </div>
-
-        <?php foreach ($images as $index => $image) : ?>
-            <section class="<?php echo $index == 0 ? 'visible' : ''; ?> scrollable-section py-20">
-                <div class="relative container">
-                    <div class="mt-20 max-w-7xl mx-auto relative">
-                        <div class="flex items-center gap-6">
-                            <div class="py-12 pl-12 flex flex-col items-start gap-6">
-                                <div class="mb-">
-                                    <h3 class="text-5xl font-medium mb-3">
-                                        Manage all<br />
-                                        social media
-                                    </h3>
-                                    <p class="opacity-80 font-normal text-sm/loose">
-                                        Lorem Ipsum has been the
-                                        industry's standard dummy
-                                        text.
-                                    </p>
-                                </div>
-                                <div class="grid grid-cols-2">
-                                    <div class="flex flex-col gap-2 py-4 false">
-                                        <div class="flex items-center gap-2">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-4">
-                                                <path d="M21 6.375c0 2.692-4.03 4.875-9 4.875S3 9.067 3 6.375 7.03 1.5 12 1.5s9 2.183 9 4.875z"></path>
-                                                <path d="M12 12.75c2.685 0 5.19-.586 7.078-1.609a8.283 8.283 0 001.897-1.384c.016.121.025.244.025.368C21 12.817 16.97 15 12 15s-9-2.183-9-4.875c0-.124.009-.247.025-.368a8.285 8.285 0 001.897 1.384C6.809 12.164 9.315 12.75 12 12.75z"></path>
-                                                <path d="M12 16.5c2.685 0 5.19-.586 7.078-1.609a8.282 8.282 0 001.897-1.384c.016.121.025.244.025.368 0 2.692-4.03 4.875-9 4.875s-9-2.183-9-4.875c0-.124.009-.247.025-.368a8.284 8.284 0 001.897 1.384C6.809 15.914 9.315 16.5 12 16.5z"></path>
-                                                <path d="M12 20.25c2.685 0 5.19-.586 7.078-1.609a8.282 8.282 0 001.897-1.384c.016.121.025.244.025.368 0 2.692-4.03 4.875-9 4.875s-9-2.183-9-4.875c0-.124.009-.247.025-.368a8.284 8.284 0 001.897 1.384C6.809 19.664 9.315 20.25 12 20.25z"></path>
-                                            </svg>
-                                            <h3 class="text-sm">
-                                                Experience Cloud
-                                            </h3>
-                                        </div>
-                                        <p class="max-w-2xl opacity-50 font-normal text-xs/relaxed pr-4">
-                                            Lorem Ipsum has been the
-                                            industry's standard
-                                            dummy.
-                                        </p>
-                                    </div>
-                                    <div class="flex flex-col gap-2 py-4 false">
-                                        <div class="flex items-center gap-2">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-4">
-                                                <path fill-rule="evenodd" d="M10.5 3.75a6 6 0 00-5.98 6.496A5.25 5.25 0 006.75 20.25H18a4.5 4.5 0 002.206-8.423 3.75 3.75 0 00-4.133-4.303A6.001 6.001 0 0010.5 3.75zm2.25 6a.75.75 0 00-1.5 0v4.94l-1.72-1.72a.75.75 0 00-1.06 1.06l3 3a.75.75 0 001.06 0l3-3a.75.75 0 10-1.06-1.06l-1.72 1.72V9.75z" clip-rule="evenodd"></path>
-                                            </svg>
-                                            <h3 class="text-sm">
-                                                Experience Cloud
-                                            </h3>
-                                        </div>
-                                        <p class="max-w-2xl opacity-50 font-normal text-xs/relaxed pr-4">
-                                            Lorem Ipsum has been the
-                                            industry's standard
-                                            dummy.
-                                        </p>
-                                    </div>
-                                    <div class="flex flex-col gap-2 py-4 border-t border-content/5">
-                                        <div class="flex items-center gap-2">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-4">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"></path>
-                                            </svg>
-                                            <h3 class="text-sm">
-                                                Experience Cloud
-                                            </h3>
-                                        </div>
-                                        <p class="max-w-2xl opacity-50 font-normal text-xs/relaxed pr-4">
-                                            Lorem Ipsum has been the
-                                            industry's standard
-                                            dummy.
-                                        </p>
-                                    </div>
-                                    <div class="flex flex-col gap-2 py-4 border-t border-content/5">
-                                        <div class="flex items-center gap-2">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-4">
-                                                <path d="M12.378 1.602a.75.75 0 00-.756 0L3 6.632l9 5.25 9-5.25-8.622-5.03zM21.75 7.93l-9 5.25v9l8.628-5.032a.75.75 0 00.372-.648V7.93zM11.25 22.18v-9l-9-5.25v8.57a.75.75 0 00.372.648l8.628 5.033z"></path>
-                                            </svg>
-                                            <h3 class="text-sm">
-                                                Experience Cloud
-                                            </h3>
-                                        </div>
-                                        <p class="max-w-2xl opacity-50 font-normal text-xs/relaxed pr-4">
-                                            Lorem Ipsum has been the
-                                            industry's standard
-                                            dummy.
-                                        </p>
-                                    </div>
-                                    <div class="flex flex-col gap-2 py-4 border-t border-content/5">
-                                        <div class="flex items-center gap-2">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-4">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"></path>
-                                            </svg>
-                                            <h3 class="text-sm">
-                                                Experience Cloud
-                                            </h3>
-                                        </div>
-                                        <p class="max-w-2xl opacity-50 font-normal text-xs/relaxed pr-4">
-                                            Lorem Ipsum has been the
-                                            industry's standard
-                                            dummy.
-                                        </p>
-                                    </div>
-                                    <div class="flex flex-col gap-2 py-4 border-t border-content/5">
-                                        <div class="flex items-center gap-2">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-4">
-                                                <path d="M12.378 1.602a.75.75 0 00-.756 0L3 6.632l9 5.25 9-5.25-8.622-5.03zM21.75 7.93l-9 5.25v9l8.628-5.032a.75.75 0 00.372-.648V7.93zM11.25 22.18v-9l-9-5.25v8.57a.75.75 0 00.372.648l8.628 5.033z"></path>
-                                            </svg>
-                                            <h3 class="text-sm">
-                                                Experience Cloud
-                                            </h3>
-                                        </div>
-                                        <p class="max-w-2xl opacity-50 font-normal text-xs/relaxed pr-4">
-                                            Lorem Ipsum has been the
-                                            industry's standard
-                                            dummy.
-                                        </p>
-                                    </div>
-                                </div>
-                                <a href="#" class="button h-11 text-sm">Learn more</a>
-                            </div>
-
-                            <div class="flex-shrink-0 w-[45%] aspect-[1/0.6] rounded-3xl overflow-hidden" style="min-height: 60vh;">
-                                <img class="w-full h-full object-cover object-top" src="<?php echo $image; ?>" alt="" />
-                            </div>
-                        </div>
+            <div style="grid-template-columns:repeat(3, minmax(0, 1fr))" class="mt-12 grid grid-cols-4 gap-6 relative">
+                <div class="relative p-px rounded-xl overflow-hidden">
+                    <div class="absolute rounded-xl inset-0 bg-gradient-to-b from-content/20 to-content/0"></div>
+                    <div class="bg-canvas min-h-full relative rounded-xl p-5 flex flex-col">
+                        <div class="mb-2 opacity-50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-6">
+                                <path fill-rule="evenodd" d="M6.912 3a3 3 0 00-2.868 2.118l-2.411 7.838a3 3 0 00-.133.882V18a3 3 0 003 3h15a3 3 0 003-3v-4.162c0-.299-.045-.596-.133-.882l-2.412-7.838A3 3 0 0017.088 3H6.912zm13.823 9.75l-2.213-7.191A1.5 1.5 0 0017.088 4.5H6.912a1.5 1.5 0 00-1.434 1.059L3.265 12.75H6.11a3 3 0 012.684 1.658l.256.513a1.5 1.5 0 001.342.829h3.218a1.5 1.5 0 001.342-.83l.256-.512a3 3 0 012.684-1.658h2.844z" clip-rule="evenodd"></path>
+                            </svg></div>
+                        <h3 class="mt-4 text-lg">All in one Inbox</h3>
+                        <p class="mt-1 font-light text-xs/relaxed opacity-60">See incoming reviews in real-time, all in a single interface.</p>
                     </div>
                 </div>
-            </section>
-        <?php endforeach; ?>
-    </div>
+                <div class="relative p-px rounded-xl overflow-hidden">
+                    <div class="absolute rounded-xl inset-0 bg-gradient-to-b from-content/20 to-content/0"></div>
+                    <div class="bg-canvas min-h-full relative rounded-xl p-5 flex flex-col">
+                        <div class="mb-2 opacity-50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-6">
+                                <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clip-rule="evenodd"></path>
+                            </svg></div>
+                        <h3 class="mt-4 text-lg">Read &amp; Reply</h3>
+                        <p class="mt-1 font-light text-xs/relaxed opacity-60">Engage with your reviews right from the inbox in real-time.</p>
+                    </div>
+                </div>
+                <div class="relative p-px rounded-xl overflow-hidden">
+                    <div class="absolute rounded-xl inset-0 bg-gradient-to-b from-content/20 to-content/0"></div>
+                    <div class="bg-canvas min-h-full relative rounded-xl p-5 flex flex-col">
+                        <div class="mb-2 opacity-50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-6">
+                                <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clip-rule="evenodd"></path>
+                            </svg></div>
+                        <h3 class="mt-4 text-lg">Advanced Filtering</h3>
+                        <p class="mt-1 font-light text-xs/relaxed opacity-60">Easily organize your inbox based on date/time, channel and other custom rules.</p>
+                    </div>
+                </div>
+                <div class="relative p-px rounded-xl overflow-hidden">
+                    <div class="absolute rounded-xl inset-0 bg-gradient-to-b from-content/20 to-content/0"></div>
+                    <div class="bg-canvas min-h-full relative rounded-xl p-5 flex flex-col">
+                        <div class="mb-2 opacity-50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-6">
+                                <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clip-rule="evenodd"></path>
+                            </svg></div>
+                        <h3 class="mt-4 text-lg">Social Tagging</h3>
+                        <p class="mt-1 font-light text-xs/relaxed opacity-60">Create custom tags, organize keywords and monitor content across channels the way you want so it's easy to find and analyze.</p>
+                    </div>
+                </div>
+                <div class="relative p-px rounded-xl overflow-hidden">
+                    <div class="absolute rounded-xl inset-0 bg-gradient-to-b from-content/20 to-content/0"></div>
+                    <div class="bg-canvas min-h-full relative rounded-xl p-5 flex flex-col">
+                        <div class="mb-2 opacity-50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-6">
+                                <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clip-rule="evenodd"></path>
+                            </svg></div>
+                        <h3 class="mt-4 text-lg">Intelligent Routing</h3>
+                        <p class="mt-1 font-light text-xs/relaxed opacity-60">Assign roles and route reviews to you or your team members as you see fit.</p>
+                    </div>
+                </div>
+                <div class="relative p-px rounded-xl overflow-hidden">
+                    <div class="absolute rounded-xl inset-0 bg-gradient-to-b from-content/20 to-content/0"></div>
+                    <div class="bg-canvas min-h-full relative rounded-xl p-5 flex flex-col">
+                        <div class="mb-2 opacity-50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-6">
+                                <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clip-rule="evenodd"></path>
+                            </svg></div>
+                        <h3 class="mt-4 text-lg">Performance Monitoring</h3>
+                        <p class="mt-1 font-light text-xs/relaxed opacity-60">Measure the impact, monitor your team and turn insights into valuable business outcomes.</p>
+                    </div>
+                </div>
+                <div class="relative p-px rounded-xl overflow-hidden">
+                    <div class="absolute rounded-xl inset-0 bg-gradient-to-b from-content/20 to-content/0"></div>
+                    <div class="bg-canvas min-h-full relative rounded-xl p-5 flex flex-col">
+                        <div class="mb-2 opacity-50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-6">
+                                <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clip-rule="evenodd"></path>
+                            </svg></div>
+                        <h3 class="mt-4 text-lg">Social Tagging</h3>
+                        <p class="mt-1 font-light text-xs/relaxed opacity-60">Create custom tags, organize keywords and monitor content across channels the way you want so it's easy to find and analyze.</p>
+                    </div>
+                </div>
+                <div class="relative p-px rounded-xl overflow-hidden">
+                    <div class="absolute rounded-xl inset-0 bg-gradient-to-b from-content/20 to-content/0"></div>
+                    <div class="bg-canvas min-h-full relative rounded-xl p-5 flex flex-col">
+                        <div class="mb-2 opacity-50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-6">
+                                <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clip-rule="evenodd"></path>
+                            </svg></div>
+                        <h3 class="mt-4 text-lg">Features Title</h3>
+                        <p class="mt-1 font-light text-xs/relaxed opacity-60">Track competitor performance using keywords &amp; profiles. Understand industry trends, patterns and more.</p>
+                    </div>
+                </div>
+                <div class="relative p-px rounded-xl overflow-hidden">
+                    <div class="absolute rounded-xl inset-0 bg-gradient-to-b from-content/20 to-content/0"></div>
+                    <div class="bg-canvas min-h-full relative rounded-xl p-5 flex flex-col">
+                        <div class="mb-2 opacity-50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-6">
+                                <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clip-rule="evenodd"></path>
+                            </svg></div>
+                        <h3 class="mt-4 text-lg">Features Title</h3>
+                        <p class="mt-1 font-light text-xs/relaxed opacity-60">Respond to tickets and provide integrated, world class customer service across all your social media channels from a single location.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center"><a href="#" class="hover:opacity-90 mt-6 inline-flex items-center gap-3">Get started<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mt-0.5">
+                        <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clip-rule="evenodd"></path>
+                    </svg></a></div>
+        </div>
+    </section>
 
+    <?php include_once "shorter-sections.php"; ?>
+    
+    <?php include_once "even-shorter-sections.php"; ?>
+
+    <section class="pt-20">
+        <div class="mb-24
+			max-w-6xl mx-auto overflow-visible">
+            <h2 class="text-2xl md:text-5xl/tight font-medium">Nextiva customers realize value and<span class="hidden md:inline"><br></span>results quickly.</h2>
+            <div class="mt-16 flex gap-4">
+                <div class="w-1/3 aspect-[1/1.25] p-12 relative flex-shrink-0 border-l border-b border-b-content/[0.008] border-t border-content/10 bg-gradient-to-br from-content/10 via-content/[0.07] to-transparent rounded-2xl overflow-hidden flex flex-col items-start justify-between gap-3">
+                    <div class="flex flex-col">
+                        <h3 class="text-2xl">"Our fans come first, and Nextiva enables us to have great conversations with our fans everyday."</h3>
+                        <div class="mt-4 opacity-60">Savannah Bananas, Owner</div>
+                    </div><a href="#" class="hover:opacity-90 mt-6 inline-flex items-center gap-3">Read case study<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mt-0.5">
+                            <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clip-rule="evenodd"></path>
+                        </svg></a>
+                </div>
+                <div class="w-1/3 aspect-[1/1.25] p-12 relative flex-shrink-0 border-l border-b border-b-content/[0.008] border-t border-content/10 bg-gradient-to-br from-content/10 via-content/[0.07] to-transparent rounded-2xl overflow-hidden flex flex-col items-start justify-between gap-3"><img class="absolute inset-0 w-full h-full object-cover" src="img/jesse-cole.jpg" alt=""></div>
+                <div class="w-1/3 aspect-[1/1.25] p-12 relative flex-shrink-0 border-l border-b border-b-content/[0.008] border-t border-content/10 bg-gradient-to-br from-content/10 via-content/[0.07] to-transparent rounded-2xl overflow-hidden flex flex-col items-start justify-between gap-3"><img class="h-6" src="img/messenger/tata-play-logo.png" alt="">
+                    <div class="mt-5 flex flex-col gap-8">
+                        <div class="flex flex-col gap-1">
+                            <h3 class="text-4xl/none font-medium tracking-wide">21M+</h3>
+                            <p class="text-sm/none opacity-60">Customers</p>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <h3 class="text-4xl/none font-medium tracking-wide">40%</h3>
+                            <p class="text-sm/none opacity-60">Cost Reduction</p>
+                        </div>
+                    </div><a href="#" class="hover:opacity-90 mt-6 inline-flex items-center gap-3">Read case study<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mt-0.5">
+                            <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clip-rule="evenodd"></path>
+                        </svg></a>
+                </div>
+                <div class="w-1/3 aspect-[1/1.25] p-12 relative flex-shrink-0 border-l border-b border-b-content/[0.008] border-t border-content/10 bg-gradient-to-br from-content/10 via-content/[0.07] to-transparent rounded-2xl overflow-hidden flex flex-col items-start justify-between gap-3"><img class="absolute inset-0 w-full h-full object-cover" src="img/messenger/tata-play-case-study.png" alt=""></div>
+                <div class="w-32">&nbsp;</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-8 md:py-12 mb-12">
+        <div class="max-w-5xl mx-auto">
+            <div class="border-content/10 bg-gradient-to-r from-primary to-primary-dark relative rounded-3xl p-16">
+                <div class="flex-1 flex flex-col items-start justify-center gap-6">
+                    <div class="rounded-full bg-content/10 p-1 pr-4 flex items-center gap-6">
+                        <div class="flex items-center">
+                            <div class="h-9 w-9 rounded-full -mr-4" style="z-index:2"><img class="h-full w-full object-cover" src="img/customer-stories/team1.png" alt=""></div>
+                            <div class="h-9 w-9 rounded-full -mr-4" style="z-index:1"><img class="h-full w-full object-cover" src="img/customer-stories/team2.png" alt=""></div>
+                            <div class="h-9 w-9 rounded-full -mr-4" style="z-index:0"><img class="h-full w-full object-cover" src="img/customer-stories/team3.png" alt=""></div>
+                        </div><span class="text-sm font-light opacity-80">Talk to our team</span>
+                    </div>
+                    <h2 class="text-2xl md:text-5xl/[1.2] mb-2 md:mb-4">Ready to make business<span class="hidden md:inline"><br></span>conversations better?<span class="hidden md:inline"><br></span></h2><a href="#" class="button button-white">Let's talk business</a>
+                </div>
+                <div class="absolute inset-y-0 right-0"><img class="h-full" src="img/customer-stories/cta.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 mb-8 relative">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col gap-2 items-center justify-center text-center">
+                <h2 class="text-2xl md:text-5xl/tight font-medium">Frequently Asked Questions</h2>
+            </div>
+            <div class="mt-12 grid grid-cols-2 items-start gap-4 relative"><button x-data="{expanded: false}" x-on:click="expanded = !expanded" class="relative p-px rounded-xl overflow-hidden">
+                    <div class="py-5 px-6 flex flex-col gap-2 border-l border-b border-b-content/[0.008] border-t border-content/10 bg-gradient-to-br from-content/10 via-content/[0.07] to-transparent rounded-xl overflow-hidden">
+                        <div class="text-left flex items-start gap-3 justify-between">
+                            <h3 class="font-semibold tracking-wide truncate">What is Business Messaging?</h3><svg class="flex-shrink-0 mt-1 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path x-show="!expanded" id="add-icon" stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
+                                <path x-show="expanded" id="minus-icon" class="" stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" style="display: none;"></path>
+                            </svg>
+                        </div>
+                        <p x-show="expanded" class="mt-1 font-light text-sm/loose opacity-90" style="display: none;">Business Messaging is commonly a phrase used when customers interact with businesses via text/sms, web, social or other digital chat channels to inquire about products/service or raise concerns/complaints about their current experience with the brand.</p>
+                    </div>
+                </button><button x-data="{expanded: false}" x-on:click="expanded = !expanded" class="relative p-px rounded-xl overflow-hidden">
+                    <div class="py-5 px-6 flex flex-col gap-2 border-l border-b border-b-content/[0.008] border-t border-content/10 bg-gradient-to-br from-content/10 via-content/[0.07] to-transparent rounded-xl overflow-hidden">
+                        <div class="text-left flex items-start gap-3 justify-between">
+                            <h3 class="font-semibold tracking-wide truncate">What is Business Messaging?</h3><svg class="flex-shrink-0 mt-1 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path x-show="!expanded" id="add-icon" stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
+                                <path x-show="expanded" id="minus-icon" class="" stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" style="display: none;"></path>
+                            </svg>
+                        </div>
+                        <p x-show="expanded" class="mt-1 font-light text-sm/loose opacity-90" style="display: none;">Business Messaging is commonly a phrase used when customers interact with businesses via text/sms, web, social or other digital chat channels to inquire about products/service or raise concerns/complaints about their current experience with the brand.</p>
+                    </div>
+                </button><button x-data="{expanded: false}" x-on:click="expanded = !expanded" class="relative p-px rounded-xl overflow-hidden">
+                    <div class="py-5 px-6 flex flex-col gap-2 border-l border-b border-b-content/[0.008] border-t border-content/10 bg-gradient-to-br from-content/10 via-content/[0.07] to-transparent rounded-xl overflow-hidden">
+                        <div class="text-left flex items-start gap-3 justify-between">
+                            <h3 class="font-semibold tracking-wide truncate">What is Business Messaging?</h3><svg class="flex-shrink-0 mt-1 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path x-show="!expanded" id="add-icon" stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
+                                <path x-show="expanded" id="minus-icon" class="" stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" style="display: none;"></path>
+                            </svg>
+                        </div>
+                        <p x-show="expanded" class="mt-1 font-light text-sm/loose opacity-90" style="display: none;">Business Messaging is commonly a phrase used when customers interact with businesses via text/sms, web, social or other digital chat channels to inquire about products/service or raise concerns/complaints about their current experience with the brand.</p>
+                    </div>
+                </button><button x-data="{expanded: false}" x-on:click="expanded = !expanded" class="relative p-px rounded-xl overflow-hidden">
+                    <div class="py-5 px-6 flex flex-col gap-2 border-l border-b border-b-content/[0.008] border-t border-content/10 bg-gradient-to-br from-content/10 via-content/[0.07] to-transparent rounded-xl overflow-hidden">
+                        <div class="text-left flex items-start gap-3 justify-between">
+                            <h3 class="font-semibold tracking-wide truncate">What is Business Messaging?</h3><svg class="flex-shrink-0 mt-1 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path x-show="!expanded" id="add-icon" stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
+                                <path x-show="expanded" id="minus-icon" class="" stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" style="display: none;"></path>
+                            </svg>
+                        </div>
+                        <p x-show="expanded" class="mt-1 font-light text-sm/loose opacity-90" style="display: none;">Business Messaging is commonly a phrase used when customers interact with businesses via text/sms, web, social or other digital chat channels to inquire about products/service or raise concerns/complaints about their current experience with the brand.</p>
+                    </div>
+                </button><button x-data="{expanded: false}" x-on:click="expanded = !expanded" class="relative p-px rounded-xl overflow-hidden">
+                    <div class="py-5 px-6 flex flex-col gap-2 border-l border-b border-b-content/[0.008] border-t border-content/10 bg-gradient-to-br from-content/10 via-content/[0.07] to-transparent rounded-xl overflow-hidden">
+                        <div class="text-left flex items-start gap-3 justify-between">
+                            <h3 class="font-semibold tracking-wide truncate">What is Business Messaging?</h3><svg class="flex-shrink-0 mt-1 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path x-show="!expanded" id="add-icon" stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
+                                <path x-show="expanded" id="minus-icon" class="" stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" style="display: none;"></path>
+                            </svg>
+                        </div>
+                        <p x-show="expanded" class="mt-1 font-light text-sm/loose opacity-90" style="display: none;">Business Messaging is commonly a phrase used when customers interact with businesses via text/sms, web, social or other digital chat channels to inquire about products/service or raise concerns/complaints about their current experience with the brand.</p>
+                    </div>
+                </button></div>
+        </div>
+    </section>
 </div>
-
-<script>
-    function activateScrollableSections() {
-        var threshold = 0.5;
-
-        function scrollSectionObserver(node, index, sections) {
-            var totalPages = sections.length;
-            var parent = node.closest('.scrollable-sections');
-            var currentPage = parent.querySelector('.scroll-current-page');
-            var progress = parent.querySelector('.scroll-progress');
-
-            new IntersectionObserver(
-                ([e]) => {
-                    var isAbove = e.boundingClientRect.top < 0;
-                    var isLastPage = index == totalPages - 1;
-
-                    var sectionIsVisible = e.intersectionRatio > threshold;
-                    var page = sectionIsVisible ? index + 1 : index;
-
-                    console.log(index, isLastPage, isAbove);
-
-                    if (isAbove) {
-                        if (!isLastPage) return;
-
-                        page = totalPages;
-                    }
-
-                    currentPage.textContent = page.toString().padStart(2, "0");
-                    var scrollPercent = ((page / totalPages) * 100) + '%';
-                    progress.style.height = scrollPercent;
-
-                    sections[index - 1].classList.toggle('visible', !sectionIsVisible);
-                    node.classList.toggle('visible', sectionIsVisible || (isLastPage && isAbove));
-                }, {
-                    threshold: [threshold],
-                }
-            ).observe(node);
-        };
-
-        document.querySelectorAll(".scrollable-sections").forEach(function(node) {
-            var currentPage = node.querySelector('.scroll-current-page');
-            var pageCount = node.querySelector('.scroll-total-pages');
-
-            var sections = node.querySelectorAll(".scrollable-section");
-            pageCount.textContent = sections.length.toString().padStart(2, '0');
-
-            sections.forEach(function(node, index) {
-                if (index > 0) {
-                    scrollSectionObserver(node, index, sections);
-                }
-            });
-
-            setTimeout(() => {
-                currentPage.textContent = "01";
-            }, 50);
-        });
-    }
-
-    activateScrollableSections();
-</script>
