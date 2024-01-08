@@ -8,53 +8,10 @@ $images = [
 ];
 ?>
 
-<style>
-    .scrollable-section {
-        position: sticky;
-        top: 0;
-        /* padding: 0 50px; */
-        min-height: calc(95vh - 96px);
-        transition: all 0.35s ease-out;
-    }
-
-    .scrollable-section:not(.visible) {
-        opacity: 0;
-        /* transform: translateY(-30%); */
-    }
-
-    .scroll-progress {
-        transition: all 0.35s ease-out;
-    }
-
-    /* .scrollable-sections {
-                height: 500vh;
-                position: relative;
-            }
-
-            .scrollable-section{
-                position: absolute;
-                top: 0;
-                left: 0;
-                bottom: 0;
-            } */
-</style>
-
 <div class="relative scrollable-sections mb-12">
     <div class="top-highlight-gradient">
         <div class="w-full flex justify-center">
             <div class="w-full h-px bg-gradient-to-r from-content/[0.03] via-content/50 to-content-[0.03]"></div>
-        </div>
-    </div>
-
-    <div class="absolute inset-y-0" style="top: 2rem; left: 2.8rem; z-index: 10">
-        <div class="flex flex-col items-center" style="position: sticky; top: 96px; height: calc(95vh - 96px); width: 4px; gap: 1.5rem">
-            <span class="scroll-current-page">01</span>
-
-            <div class="flex-1 relative" style="width: 1px; background: rgba(255, 255, 255, 0.3)">
-                <div class="bg-white scroll-progress" style="height: 20%"></div>
-            </div>
-
-            <span class="scroll-total-pages">05</span>
         </div>
     </div>
 
