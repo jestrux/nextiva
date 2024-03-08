@@ -16,15 +16,51 @@ require __DIR__ . '/../../shared/head.php';
             var threshold = 0.5;
             var scrollSectionStyles = document.createElement("style");
             scrollSectionStyles.innerHTML = `
-                .scrollable-section {
-                    position: sticky;
-                    top: 0;
-                    /* min-height: calc(95vh - 96px) */
-                    transition: all 0.35s ease-out;
+                .scrollable-sections {
+                    position: relative !important;
                 }
 
-                .scrollable-section:not(.visible) {
+                .scroll-section-slides {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    position: sticky; 
+                    top: 96px; 
+                    height: calc(95vh - 96px); 
+                    width: 100%; 
+                    gap: 1.5rem;
+                }
+
+                .scroll-section-slides-wrapper {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    margin: 0 auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .scrollable-section {
+                    position: sticky !important;
+                    top: 0 !important;
+                    min-height: calc(95vh - 96px) !important;
+                    display: flex !important;
+                    align-items: center !important;
+                    transition: all 0.35s ease-out;
                     opacity: 0;
+                }
+                
+                .scroll-section-slides .scrollable-section {
+                    position: absolute !important;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+                
+                .scroll-section-slides .scrollable-section.visible {
+                    opacity: 1;
                 }
 
                 .scroll-section-indicator {
@@ -88,6 +124,18 @@ require __DIR__ . '/../../shared/head.php';
                 return scrollSectionIndicator;
             }
 
+            function getScrollSectionSlides() {
+                const scrollSectionSlides = document.createElement("div");
+                scrollSectionSlides.className = "scroll-section-slides";
+                scrollSectionSlides.innerHTML = `
+                    <div class="scroll-section-slides-wrapper">
+                        
+                    </div>
+                `;
+
+                return scrollSectionSlides;
+            }
+
             function scrollSectionObserver({
                 currentPage,
                 progress,
@@ -96,6 +144,7 @@ require __DIR__ . '/../../shared/head.php';
                 sections,
                 parent,
                 totalPages,
+                slideSections
             }) {
                 new IntersectionObserver(
                     ([e]) => {
@@ -104,8 +153,6 @@ require __DIR__ . '/../../shared/head.php';
 
                         var sectionIsVisible = e.intersectionRatio > threshold;
                         var page = sectionIsVisible ? index + 1 : index;
-
-                        console.log(index, isLastPage, isAbove);
 
                         if (isAbove) {
                             if (!isLastPage) return;
@@ -119,6 +166,10 @@ require __DIR__ . '/../../shared/head.php';
 
                         sections[index - 1].classList.toggle('visible', !sectionIsVisible);
                         section.classList.toggle('visible', sectionIsVisible || (isLastPage && isAbove));
+
+                        slideSections.forEach(function(section, index) {
+                            section.classList.toggle('visible', index == page - 1);
+                        });
                     }, {
                         threshold: [threshold],
                     }
@@ -126,16 +177,34 @@ require __DIR__ . '/../../shared/head.php';
             };
 
             document.querySelectorAll(".scrollable-sections").forEach(function(node) {
+                var sectionSlides = getScrollSectionSlides();
+                var slidesWrapper = sectionSlides.querySelector(".scroll-section-slides-wrapper");
+                var slideSections = [];
+
                 var indicator = getScrollSectionIndicator();
                 var currentPage = indicator.querySelector('.scroll-section-current-page');
                 var progress = indicator.querySelector('.scroll-section-progress');
                 var pageCount = indicator.querySelector('.scroll-section-total-pages');
+                var sections = node.querySelectorAll(".scrollable-section");
+
+                node.prepend(sectionSlides);
                 node.appendChild(indicator);
 
-                var sections = node.querySelectorAll(".scrollable-section");
                 pageCount.textContent = sections.length.toString().padStart(2, '0');
 
                 sections.forEach(function(section, index) {
+                    let new_section = section.cloneNode(true);
+                    slideSections.push(new_section);
+                    slidesWrapper.appendChild(new_section);
+
+                    var sectionWidth = section.getBoundingClientRect().width;
+
+                    if (index == 0)
+                        slidesWrapper.style.maxWidth = section.getBoundingClientRect().width;
+                    else if (sectionWidth > slidesWrapper.style.maxWidth) {
+                        slidesWrapper.style.maxWidth = section.getBoundingClientRect().width;
+                    }
+
                     if (index > 0) {
                         scrollSectionObserver({
                             currentPage,
@@ -145,7 +214,8 @@ require __DIR__ . '/../../shared/head.php';
                             index,
                             sections,
                             parent: node,
-                            totalPages: sections.length
+                            totalPages: sections.length,
+                            slideSections,
                         });
                     }
                 });
